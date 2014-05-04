@@ -12,11 +12,11 @@
   <title>Carousel Template for Bootstrap</title>
 
    <!-- Bootstrap core CSS -->
-  <link href="../bower_components/bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
 
           <!-- Custom styles for this template -->
-      <link href="../stylesheets/carousel.css" rel="stylesheet">
-      <link href="../stylesheets/signin.css" rel="stylesheet">
+      <link href="stylesheets/carousel.css" rel="stylesheet">
+      <link href="stylesheets/signin.css" rel="stylesheet">
     </head>
 <!-- NAVBAR
   ================================================== -->

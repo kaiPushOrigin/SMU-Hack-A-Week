@@ -12,11 +12,11 @@
   <title>Carousel Template for Bootstrap</title>
 
    <!-- Bootstrap core CSS -->
-  <link href="../bower_components/bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="bower_components/bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
 
           <!-- Custom styles for this template -->
-      <link href="../stylesheets/carousel.css" rel="stylesheet">
-      <link href="../stylesheets/signin.css" rel="stylesheet">
+      <link href="stylesheets/carousel.css" rel="stylesheet">
+      <link href="stylesheets/signin.css" rel="stylesheet">
     </head>
 <!-- NAVBAR
   ================================================== -->
@@ -32,13 +32,10 @@
           <form class="form-signin" role="form" action="profileform.php" method="post">
 
             <h2 class="form-signin-heading">Please enter the required details</h2>
-	     name : <input type="text" name="name" id="name" class="form-control" placeholder="name" required autofocus>
+	          Name : <input type="text" name="name" id="name" class="form-control" placeholder="name" required autofocus>
             Password : <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
             Re-Enter Password : <input type="password" name="re-password" id="re-password" class="form-control" placeholder="Re-Enter Password" required>
-            Offering : <input type="text" name="offering" id="offering" class="form-control" placeholder="Offering" required autofocus>
-            Skills : <input type="text" name="skills" id="skills" class="form-control" placeholder="Skills" required>
-            Courses : <input type="text" name="courses" id="courses" class="form-control" placeholder="Courses" required>
-            Projects : <input type="text" name="projects" id="projects" class="form-control" placeholder="Projects" required><br />
+            Email Address : <input type="text" name="email" id="email" class="form-control" placeholder="Email Address" required autofocus> <br />
 	    <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
           </form>
 

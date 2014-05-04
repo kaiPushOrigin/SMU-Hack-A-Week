@@ -9,10 +9,9 @@ window.onload = getMyLocation;
 
 function getMyLocation() {
 	if (navigator.geolocation) {
-		var watchButton = document.getElementById("watch");
-		watchButton.onclick = watchLocation;
-		var clearWatchButton = document.getElementById("clearWatch");
-		clearWatchButton.onclick = clearWatch;
+		//var watchButton = document.getElementById("watch");
+		//watchButton.onclick = 
+		watchLocation();
 	}
 	else {
 		alert("Oops, no geolocation support");
@@ -22,12 +21,6 @@ function getMyLocation() {
 function displayLocation(position) {
 	var latitude = position.coords.latitude;
 	var longitude = position.coords.longitude;
-
-	var div = document.getElementById("location");
-	div.innerHTML = "You are at Latitude: " + latitude + ", Longitude: " + longitude;
-	div.innerHTML += " (with " + position.coords.accuracy + " meters accuracy)";
-
-	var distance = document.getElementById("distance");
 
 	if (map == null) {
 		showMap(position.coords);
@@ -73,7 +66,7 @@ function showMap(coords) {
 	var googleLatAndLong = new google.maps.LatLng(coords.latitude, 
 												  coords.longitude);
 	var mapOptions = {
-		zoom: 17,
+		zoom: 10,
 		center: googleLatAndLong,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
@@ -82,8 +75,11 @@ function showMap(coords) {
 
 	// add the user marker
 	var title = "Your Location";
-	var content = "You are here: " + coords.latitude + ", " + coords.longitude;
+	var content = "You are here: " + coords.latitude + ", " + coords.longitude;		// we can use this content to add stuff to our marker( like name of place)
 	addMarker(map, googleLatAndLong, title, content);
+	
+	
+	
 }
 
 function addMarker(map, latlong, title, content) {
@@ -102,6 +98,7 @@ function addMarker(map, latlong, title, content) {
 
 	var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
 
+	
 	google.maps.event.addListener(marker, 'click', function() {
 		infoWindow.open(map);
 	});
@@ -143,11 +140,3 @@ function scrollMapToPosition(coords) {
 	addMarker(map, latlong, "Your new location", "You moved to: " + 
 								latitude + ", " + longitude);
 }
-
-function clearWatch() {
-	if (watchId) {
-		navigator.geolocation.clearWatch(watchId);
-		watchId = null;
-	}
-}
-

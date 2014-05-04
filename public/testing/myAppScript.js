@@ -4,6 +4,7 @@ var watchId = null;
 var map = null;
 var infowindow;
 var prevCoords = null;
+var allMarkers = [];
 
 window.onload = getMyLocation;
 
@@ -106,7 +107,9 @@ function addMarker(map, latlong, title, content) {
 	};
 	
 	var marker = new google.maps.Marker(markerOptions);
-
+	
+	allMarkers.push(marker);
+	
 	var infoWindowOptions = {
 		content: content,
 		position: latlong
@@ -148,6 +151,8 @@ function createMarker(place) {
     position: place.geometry.location
   });
 	
+	allMarkers.push(marker);
+	
 	google.maps.event.addListener(marker, 'click', function() {
     infowindow.setContent(place.name);
     infowindow.open(map, this);
@@ -188,4 +193,22 @@ function scrollMapToPosition(coords) {
 	// add the new marker
 	addMarker(map, latlong, "Your new location", "You moved to: " + 
 								latitude + ", " + longitude);
+	addNearbyPlaces(map, latlong);
+	
+	deleteMarkers(); 											 //deleting old markers
+	
 }
+
+function clearMarkers(){
+
+				 for(var i=0;i<allMarkers.length;i++)
+				 {
+				     allMarkers[i].setMap(null);
+				 }
+}
+
+function deleteMarkers() {
+  clearMarkers();
+  allMarkers = [];
+}
+ 

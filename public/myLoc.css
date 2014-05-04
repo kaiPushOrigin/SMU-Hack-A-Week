@@ -13,7 +13,7 @@ form, div#location, div#distance {
 
 div#map {
 	margin: 5px;
-	width: 400px;
-	height: 400px;
+	width: 1200px;
+	height: 600px;
 	border: 1px solid black;
 }

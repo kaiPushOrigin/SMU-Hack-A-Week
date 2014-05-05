@@ -25,7 +25,7 @@
 <br />
 <br />
 <br />
-<?php $sql = "SELECT distinct interests FROM information GROUP BY name;";
+<?php $sql = "SELECT distinct interests FROM info GROUP BY interests;";
 
 $result = mysql_query($sql)
         or die(mysql_error());
@@ -37,11 +37,11 @@ if ($result != 0) {
   echo '<div class="row row-offcanvas row-offcanvas-right">';
 echo '<div class="jumbotron">';
 
-        echo "<h2>Welcome to TUMBLE, Your interests are: $interests.</h2><br />";
+        echo "<h2>Welcome to TUMBLE, Your interests are $interests. </h2><br />";
 
 echo '</div> </div>';
     }
-   $pr = $_GET["name"];
+   $pr = $_GET["interests"];
    echo $pr;
     echo '</select>';
     echo '</label>';    

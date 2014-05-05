@@ -86,7 +86,7 @@ function addNearbyPlaces(map, googleLatAndLong){
 
 		var request = {
     location: googleLatAndLong,
-    radius: 200,
+    radius: 500,
     types: ['store']
   };
 	

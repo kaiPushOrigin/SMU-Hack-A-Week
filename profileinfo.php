@@ -35,7 +35,8 @@
 	          Name : <input type="text" name="name" id="name" class="form-control" placeholder="name" required autofocus>
             Password : <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
             Re-Enter Password : <input type="password" name="re-password" id="re-password" class="form-control" placeholder="Re-Enter Password" required>
-            Email Address : <input type="text" name="email" id="email" class="form-control" placeholder="Email Address" required autofocus> <br />
+            Email Address : <input type="text" name="email" id="email" class="form-control" placeholder="Email Address" required autofocus>
+            Interests : <input type="text" name="interests" id="interests" class="form-control" placeholder="interests" required autofocus> <br />
 	    <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
           </form>
 

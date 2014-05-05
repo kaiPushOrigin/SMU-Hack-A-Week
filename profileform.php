@@ -11,9 +11,9 @@
 
 
 
-$sql="INSERT INTO information(name, password, email)
+$sql="INSERT INTO information(name, password, email, interests)
 VALUES
-('$_POST[name]','$_POST[password]','$_POST[email]')";
+('$_POST[name]','$_POST[password]','$_POST[email]','$_POST[interests]')";
 
 if (mysql_query($sql,$db_connection)) {
 

@@ -14,9 +14,9 @@
 
   <!-- Bootstrap core CSS -->
 <link href="stylesheets/home.css" rel="stylesheet">
-  <link href="bower_components/bootstrap-jasny/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="stylesheets/navbar-fixed-top.css" rel="stylesheet">
-      <link href="stylesheets/signin.css" rel="stylesheet">
+  <link href="../bower_components/bootstrap-jasny/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../stylesheets/navbar-fixed-top.css" rel="stylesheet">
+      <link href="../stylesheets/signin.css" rel="stylesheet">
 
 
 <body>
@@ -25,7 +25,7 @@
 <br />
 <br />
 <br />
-<?php $sql = "SELECT distinct name FROM information GROUP BY name;";
+<?php $sql = "SELECT distinct interests FROM information GROUP BY name;";
 
 $result = mysql_query($sql)
         or die(mysql_error());
@@ -33,11 +33,11 @@ if ($result != 0) {
     $num_results = mysql_num_rows($result);
     for ($i=1;$i<2;$i++) {
         $row = mysql_fetch_array($result);
-        $name = $row['name'];
+        $interests = $row['interests'];
   echo '<div class="row row-offcanvas row-offcanvas-right">';
 echo '<div class="jumbotron">';
 
-        echo "<h2>Hello $name, Welcome to SMUnity</h2><br />";
+        echo "<h2>Welcome to TUMBLE, Your interests are: $interests.</h2><br />";
 
 echo '</div> </div>';
     }
@@ -105,7 +105,7 @@ echo '</div> </div>';
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap-jasny/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap-jasny/dist/js/bootstrap.min.js"></script>
   </body>
   </html>

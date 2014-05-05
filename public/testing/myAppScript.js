@@ -2,7 +2,7 @@
 
 var watchId = null;
 var map = null;
-var infowindow;
+var infowindow;		 															//global variables
 var prevCoords = null;
 var allMarkers = [];
 var bound = new google.maps.LatLngBounds();
@@ -11,8 +11,6 @@ window.onload = getMyLocation;
 
 function getMyLocation() {
 	if (navigator.geolocation) {
-		//var watchButton = document.getElementById("watch");
-		//watchButton.onclick = 
 		watchLocation();
 	}
 	else {
@@ -38,32 +36,6 @@ function displayLocation(position) {
 }
 
 
-// --------------------- Ready Bake ------------------
-//
-// Uses the Spherical Law of Cosines to find the distance
-// between two lat/long points
-//
-function computeDistance(startCoords, destCoords) {
-	var startLatRads = degreesToRadians(startCoords.latitude);
-	var startLongRads = degreesToRadians(startCoords.longitude);
-	var destLatRads = degreesToRadians(destCoords.latitude);
-	var destLongRads = degreesToRadians(destCoords.longitude);
-
-	var Radius = 6371; // radius of the Earth in km
-	var distance = Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) + 
-					Math.cos(startLatRads) * Math.cos(destLatRads) *
-					Math.cos(startLongRads - destLongRads)) * Radius;
-
-	return distance;
-}
-
-function degreesToRadians(degrees) {
-	radians = (degrees * Math.PI)/180;
-	return radians;
-}
-
-// ------------------ End Ready Bake -----------------
-
 function showMap(coords) {
 	var googleLatAndLong = new google.maps.LatLng(coords.latitude, 
 												  coords.longitude);
@@ -77,13 +49,10 @@ function showMap(coords) {
 	
 	// add the user marker
 	var title = "Your Location";
-	var content = "You are here: " + coords.latitude + ", " + coords.longitude;		// we can use this content to add stuff to our marker( like name of place)
+	var content = "You are here";		
+	
 	addMarker(map, googleLatAndLong, title, content);
 	addNearbyPlaces(map, googleLatAndLong);
-	
-	//set maps position
-	
-	//setMapBounds();
 	
 }
 
@@ -131,6 +100,9 @@ function callback(results, status) {
     for(var i = 0; i < results.length; i++) {
       createMarker(results[i]);
     }
+		
+		setMapBounds();						 				 			 							// to set maps position
+		
   }
 }
 
@@ -138,7 +110,7 @@ function createMarker(place) {
   var placeLoc = place.geometry.location;
   var marker = new google.maps.Marker({
     map: map,
-    position: place.geometry.location
+    position: placeLoc
   });
 	
 	allMarkers.push(marker);
@@ -149,20 +121,6 @@ function createMarker(place) {
   });
 }
 
-function displayError(error) {
-	var errorTypes = {
-		0: "Unknown error",
-		1: "Permission denied",
-		2: "Position is not available",
-		3: "Request timeout"
-	};
-	var errorMessage = errorTypes[error.code];
-	if (error.code == 0 || error.code == 2) {
-		errorMessage = errorMessage + " " + error.message;
-	}
-	var div = document.getElementById("location");
-	div.innerHTML = errorMessage;
-}
 
 //
 // Code to watch the user's location
@@ -178,8 +136,7 @@ function scrollMapToPosition(coords) {
 	var longitude = coords.longitude;
 
 	var latlong = new google.maps.LatLng(latitude, longitude);
-	map.panTo(latlong);
-
+	
 	deleteMarkers(); 											 //deleting old markers
 	
 	// add the new marker
@@ -187,7 +144,12 @@ function scrollMapToPosition(coords) {
 								latitude + ", " + longitude);
 	addNearbyPlaces(map, latlong);
 	
-	//setMapBounds();			 											 	 //set map position
+}
+
+
+function deleteMarkers() {
+  clearMarkers();
+  allMarkers = [];
 }
 
 function clearMarkers(){
@@ -198,20 +160,59 @@ function clearMarkers(){
 				 }
 }
 
-function deleteMarkers() {
-  clearMarkers();
-  allMarkers = [];
-}
 
-/*
+
 function setMapBounds(){
   for(var i in allMarkers)
   {
     bound.extend(allMarkers[i].getPosition());
   }
-  map.fitBounds(bound);
 	
+  map.fitBounds(bound);	
 }
-*/			 
 
+
+function displayError(error) {
+	var errorTypes = {
+		0: "Unknown error",
+		1: "Permission denied",
+		2: "Position is not available",
+		3: "Request timeout"
+	};
+	var errorMessage = errorTypes[error.code];
+	if (error.code == 0 || error.code == 2) {
+		errorMessage = errorMessage + " " + error.message;
+	}
+	var div = document.getElementById("location");
+	div.innerHTML = errorMessage;
+}
+		 
+
+
+
+// --------------------- Ready Bake ------------------
+//
+// Uses the Spherical Law of Cosines to find the distance
+// between two lat/long points
+//
+function computeDistance(startCoords, destCoords) {
+	var startLatRads = degreesToRadians(startCoords.latitude);
+	var startLongRads = degreesToRadians(startCoords.longitude);
+	var destLatRads = degreesToRadians(destCoords.latitude);
+	var destLongRads = degreesToRadians(destCoords.longitude);
+
+	var Radius = 6371; // radius of the Earth in km
+	var distance = Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) + 
+					Math.cos(startLatRads) * Math.cos(destLatRads) *
+					Math.cos(startLongRads - destLongRads)) * Radius;
+
+	return distance;
+}
+
+function degreesToRadians(degrees) {
+	radians = (degrees * Math.PI)/180;
+	return radians;
+}
+
+// ------------------ End Ready Bake -----------------
  

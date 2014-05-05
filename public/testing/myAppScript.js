@@ -5,6 +5,7 @@ var map = null;
 var infowindow;
 var prevCoords = null;
 var allMarkers = [];
+var bound = new google.maps.LatLngBounds();
 
 window.onload = getMyLocation;
 
@@ -29,7 +30,7 @@ function displayLocation(position) {
 	}
 	else {
 		var meters = computeDistance(position.coords, prevCoords) * 1000;
-		if (meters > 20) {
+		if (meters > 8) {
 			scrollMapToPosition(position.coords);
 			prevCoords = position.coords;
 		}
@@ -74,26 +75,15 @@ function showMap(coords) {
 	var mapDiv = document.getElementById("map-canvas");
 	map = new google.maps.Map(mapDiv, mapOptions);
 	
-	// set maps position
-	
-/*	
-	var LatLngList = new Array(googleLatAndLong);
-
-	var bounds = new google.maps.LatLngBounds ();
-
-	for(var i = 0, LtLgLen = LatLngList.length; i < LtLgLen; i++) {
-  				bounds.extend (LatLngList[i]);
-	}
-	
-	map.fitBounds (bounds);
-	
-*/
-	
 	// add the user marker
 	var title = "Your Location";
 	var content = "You are here: " + coords.latitude + ", " + coords.longitude;		// we can use this content to add stuff to our marker( like name of place)
 	addMarker(map, googleLatAndLong, title, content);
 	addNearbyPlaces(map, googleLatAndLong);
+	
+	//set maps position
+	
+	//setMapBounds();
 	
 }
 
@@ -127,7 +117,7 @@ function addNearbyPlaces(map, googleLatAndLong){
 
 		var request = {
     location: googleLatAndLong,
-    radius: 500,
+    radius: 200,
     types: ['store']
   };
 	
@@ -190,13 +180,14 @@ function scrollMapToPosition(coords) {
 	var latlong = new google.maps.LatLng(latitude, longitude);
 	map.panTo(latlong);
 
+	deleteMarkers(); 											 //deleting old markers
+	
 	// add the new marker
 	addMarker(map, latlong, "Your new location", "You moved to: " + 
 								latitude + ", " + longitude);
 	addNearbyPlaces(map, latlong);
 	
-	deleteMarkers(); 											 //deleting old markers
-	
+	//setMapBounds();			 											 	 //set map position
 }
 
 function clearMarkers(){
@@ -211,4 +202,16 @@ function deleteMarkers() {
   clearMarkers();
   allMarkers = [];
 }
+
+/*
+function setMapBounds(){
+  for(var i in allMarkers)
+  {
+    bound.extend(allMarkers[i].getPosition());
+  }
+  map.fitBounds(bound);
+	
+}
+*/			 
+
  

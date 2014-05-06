@@ -34,6 +34,7 @@ html, body, #map-canvas {
         overflow-y: scroll;
       }
       li {
+				font-size: 14px;
         background-color: #f1f1f1;
         padding: 10px;
         text-overflow: ellipsis;

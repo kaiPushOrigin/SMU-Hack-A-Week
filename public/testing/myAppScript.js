@@ -6,7 +6,7 @@ var infowindow=null;		 															//global variables
 var prevCoords = null;
 var allMarkers = [];
 var bound = new google.maps.LatLngBounds();
-var key_array=['food','greekfood','sextoys','parks','museums'];
+var key_array=['food','greekfood','sextoys','museums'];
 var placesList=null;
 
 window.onload = getMyLocation;
@@ -111,6 +111,7 @@ function callback(results, status, pagination) {
 		setMapBounds();
 								 				 			 							// to set maps position
 		if (pagination.hasNextPage) {
+			 sleep:2;
       var moreButton = document.getElementById('more');
 
       moreButton.disabled = false;
@@ -118,6 +119,7 @@ function callback(results, status, pagination) {
       google.maps.event.addDomListenerOnce(moreButton, 'click',
           function() {
         moreButton.disabled = true;
+				sleep:2;
         pagination.nextPage();
       });
     }
@@ -135,7 +137,6 @@ function createMarker(place) {
 	else
 			 var image = null;
 
-	//var photos = place.photos;
 	
   var marker = new google.maps.Marker({
     map: map,
@@ -143,14 +144,20 @@ function createMarker(place) {
     position: placeLoc
   });
 	
-	placesList.innerHTML += '<li>' + place.name + '</li>';
-
-	
 	var request =  {
       reference: place.reference
-    };
+    };		
 		
 	var service = new google.maps.places.PlacesService(map);	
+
+	service.getDetails(request, function(place, status) {
+			if (status == google.maps.places.PlacesServiceStatus.OK) {
+				 var content=""; 
+				 if (place.website) content = '<a target="_blank" href="'+place.website+'">'+place.website+'</a>';
+				 placesList.innerHTML += '<li>' + place.name + '<br>' + content + '</li>';			
+			}
+	});
+			
 	
 	allMarkers.push(marker);
 	
@@ -160,9 +167,10 @@ function createMarker(place) {
         service.getDetails(request, function(place, status) {
           if (status == google.maps.places.PlacesServiceStatus.OK) {
             var contentStr = '<h5>'+place.name+'</h5><p>'+place.formatted_address;
-            if (!!place.formatted_phone_number) contentStr += '<br>'+place.formatted_phone_number;
-            if (!!place.website) contentStr += '<br><a target="_blank" href="'+place.website+'">'+place.website+'</a>';
-            contentStr += '<br>'+place.types+'</p>';
+            if (place.formatted_phone_number) contentStr += '<br>'+place.formatted_phone_number;
+            if (place.website) contentStr += '<br><a target="_blank" href="'+place.website+'">'+place.website+'</a>';
+						if (place.rating) contentStr += '<br>' + "User Rating: " + place.rating;
+            contentStr +='</p>';
             infowindow.setContent(contentStr);
             infowindow.open(map,marker);
           } else { 

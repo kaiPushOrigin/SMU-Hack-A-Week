@@ -2,10 +2,12 @@
 
 var watchId = null;
 var map = null;
-var infowindow;		 															//global variables
+var infowindow=null;		 															//global variables
 var prevCoords = null;
 var allMarkers = [];
 var bound = new google.maps.LatLngBounds();
+var key_array=['food','greekfood','sextoys','parks','museums'];
+var placesList=null;
 
 window.onload = getMyLocation;
 
@@ -84,25 +86,41 @@ function addMarker(map, latlong, title, content) {
 
 function addNearbyPlaces(map, googleLatAndLong){
 
-		var request = {
-    location: googleLatAndLong,
-    radius: 500,
-    keyword: 'food'
-  };
+		placesList = document.getElementById('places');
+
+		for(var i=0;i<key_array.length;i++)
+		{
+		 		var request = {
+     		location: googleLatAndLong,
+     		radius: 500,
+     		keyword: key_array[i]
+  	 		};
 	
-  infowindow = new google.maps.InfoWindow();
-  var service = new google.maps.places.PlacesService(map);
-  service.nearbySearch(request, callback);
+	 			infowindow = new google.maps.InfoWindow();
+  			var service = new google.maps.places.PlacesService(map);
+  			service.nearbySearch(request, callback);
+		}
 }
 
-function callback(results, status) {
+function callback(results, status, pagination) {
   if(status == google.maps.places.PlacesServiceStatus.OK) {
     for(var i = 0; i < results.length; i++) {
       createMarker(results[i]);
     }
 		
-		setMapBounds();						 				 			 							// to set maps position
-		
+		setMapBounds();
+								 				 			 							// to set maps position
+		if (pagination.hasNextPage) {
+      var moreButton = document.getElementById('more');
+
+      moreButton.disabled = false;
+
+      google.maps.event.addDomListenerOnce(moreButton, 'click',
+          function() {
+        moreButton.disabled = true;
+        pagination.nextPage();
+      });
+    }
   }
 }
 
@@ -124,6 +142,9 @@ function createMarker(place) {
 		icon: image,
     position: placeLoc
   });
+	
+	placesList.innerHTML += '<li>' + place.name + '</li>';
+
 	
 	var request =  {
       reference: place.reference

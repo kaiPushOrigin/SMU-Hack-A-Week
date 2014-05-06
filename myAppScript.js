@@ -1,11 +1,10 @@
-/* myLoc.js */
-
 var watchId = null;
 var map = null;
 var infowindow;		 															//global variables
 var prevCoords = null;
 var allMarkers = [];
 var bound = new google.maps.LatLngBounds();
+var myVar = 'pubs';
 
 window.onload = getMyLocation;
 
@@ -87,7 +86,7 @@ function addNearbyPlaces(map, googleLatAndLong){
 		var request = {
     location: googleLatAndLong,
     radius: 500,
-    types: ['store']
+    keyword: myVar
   };
 
   infowindow = new google.maps.InfoWindow();
@@ -108,17 +107,49 @@ function callback(results, status) {
 
 function createMarker(place) {
   var placeLoc = place.geometry.location;
+	if (place.icon) {
+      var image = new google.maps.MarkerImage(
+            place.icon, new google.maps.Size(71, 71),
+            new google.maps.Point(0, 0), new google.maps.Point(17, 34),
+            new google.maps.Size(25, 25));
+  } 
+	else
+			 var image = null;
+
+	//var photos = place.photos;
+
   var marker = new google.maps.Marker({
     map: map,
+		icon: image,
     position: placeLoc
   });
 
+	var request =  {
+      reference: place.reference
+    };
+
+	var service = new google.maps.places.PlacesService(map);	
+
 	allMarkers.push(marker);
 
-	google.maps.event.addListener(marker, 'click', function() {
-    infowindow.setContent(place.name);
-    infowindow.open(map, this);
-  });
+	// setting content on markers
+
+	google.maps.event.addListener(marker,'click',function(){
+        service.getDetails(request, function(place, status) {
+          if (status == google.maps.places.PlacesServiceStatus.OK) {
+            var contentStr = '<h5>'+place.name+'</h5><p>'+place.formatted_address;
+            if (!!place.formatted_phone_number) contentStr += '<br>'+place.formatted_phone_number;
+            if (!!place.website) contentStr += '<br><a target="_blank" href="'+place.website+'">'+place.website+'</a>';
+            contentStr += '<br>'+place.types+'</p>';
+            infowindow.setContent(contentStr);
+            infowindow.open(map,marker);
+          } else { 
+            var contentStr = "<h5>No Result, status="+status+"</h5>";
+            infowindow.setContent(contentStr);
+            infowindow.open(map,marker);
+          }
+        });
+    });
 }
 
 
@@ -140,8 +171,7 @@ function scrollMapToPosition(coords) {
 	deleteMarkers(); 											 //deleting old markers
 
 	// add the new marker
-	addMarker(map, latlong, "Your new location", "You moved to: " + 
-								latitude + ", " + longitude);
+	addMarker(map, latlong, "Your location", "You are here ");
 	addNearbyPlaces(map, latlong);
 
 }
@@ -213,5 +243,3 @@ function degreesToRadians(degrees) {
 	radians = (degrees * Math.PI)/180;
 	return radians;
 }
-
-// ------------------ End Ready Bake -----------------

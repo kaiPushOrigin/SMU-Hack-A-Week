@@ -1,4 +1,37 @@
 
+<?php include "db.php"; ?>
+
+<?php $sql = "SELECT distinct interests FROM info GROUP BY interests;";
+
+$result = mysql_query($sql)
+        or die(mysql_error());
+if ($result != 0) {
+    $num_results = mysql_num_rows($result);
+    for ($i=1;$i<2;$i++) {
+        $row = mysql_fetch_array($result);
+        $interests = $row['interests'];
+
+    }
+   $pr = $_GET["interests"]; 
+}
+?>
+
+
+<html>
+<head>
+<title>Wherever you go, there you are</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+<meta charset="utf-8">
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places"></script>
+
+<link rel="stylesheet" href="../myLoc.css">
+</head>
+<body>
+
+	<script>
+
+
+
 
 
 
@@ -97,7 +130,7 @@ function addNearbyPlaces(map, googleLatAndLong){
 		 		var request = {
      		location: googleLatAndLong,
      		radius: 500,
-     		keyword: key_array[i]
+     		keyword: key_array
   	 		};
 
 	 			infowindow = new google.maps.InfoWindow();
@@ -277,3 +310,20 @@ function degreesToRadians(degrees) {
 	radians = (degrees * Math.PI)/180;
 	return radians;
 }
+
+	</script>
+
+<div id="map-canvas">
+</div>
+
+<div id="results">
+      <h2>Results</h2>
+      <ul id="places"></ul>
+      <button id="more">More results</button>
+</div>
+
+<div id="location">
+</div>
+
+</body>
+</html>

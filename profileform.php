@@ -17,7 +17,7 @@ VALUES
 
 if (mysql_query($sql,$db_connection)) {
 
-    header ("location: http://localhost:8888/profile.php/"); 
+    header ("location: http://localhost:8888/myApp.php/"); 
     }
     else {
 echo "Something is wrong";

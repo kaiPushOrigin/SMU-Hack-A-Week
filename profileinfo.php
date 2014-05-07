@@ -29,7 +29,8 @@
     <span class="sr-only">50% Complete</span>
   </div>
 </div>
-          <form class="form-signin" role="form" action="profileform.php" method="post">
+          <form class="form-signin" role="form" action="profileform.php" method="post" onSubmit='validate(); return false;'>
+
 
             <h2 class="form-signin-heading">Please enter the required details</h2>
 	          Name : <input type="text" name="name" id="name" class="form-control" placeholder="name" required autofocus>

@@ -1,10 +1,11 @@
 var watchId = null;
 var map = null;
-var infowindow;		 															//global variables
+var infowindow=null;		 															//global variables
 var prevCoords = null;
 var allMarkers = [];
 var bound = new google.maps.LatLngBounds();
-var myVar = 'pubs';
+var key_array=['food','greekfood','sextoys','museums'];
+var placesList=null;
 
 window.onload = getMyLocation;
 
@@ -83,25 +84,43 @@ function addMarker(map, latlong, title, content) {
 
 function addNearbyPlaces(map, googleLatAndLong){
 
-		var request = {
-    location: googleLatAndLong,
-    radius: 500,
-    keyword: myVar
-  };
+		placesList = document.getElementById('places');
 
-  infowindow = new google.maps.InfoWindow();
-  var service = new google.maps.places.PlacesService(map);
-  service.nearbySearch(request, callback);
+		for(var i=0;i<key_array.length;i++)
+		{
+		 		var request = {
+     		location: googleLatAndLong,
+     		radius: 500,
+     		keyword: key_array[i]
+  	 		};
+
+	 			infowindow = new google.maps.InfoWindow();
+  			var service = new google.maps.places.PlacesService(map);
+  			service.nearbySearch(request, callback);
+		}
 }
 
-function callback(results, status) {
+function callback(results, status, pagination) {
   if(status == google.maps.places.PlacesServiceStatus.OK) {
     for(var i = 0; i < results.length; i++) {
       createMarker(results[i]);
     }
 
-		setMapBounds();						 				 			 							// to set maps position
+		setMapBounds();
+								 				 			 							// to set maps position
+		if (pagination.hasNextPage) {
+			 sleep:2;
+      var moreButton = document.getElementById('more');
 
+      moreButton.disabled = false;
+
+      google.maps.event.addDomListenerOnce(moreButton, 'click',
+          function() {
+        moreButton.disabled = true;
+				sleep:2;
+        pagination.nextPage();
+      });
+    }
   }
 }
 
@@ -116,7 +135,6 @@ function createMarker(place) {
 	else
 			 var image = null;
 
-	//var photos = place.photos;
 
   var marker = new google.maps.Marker({
     map: map,
@@ -126,9 +144,18 @@ function createMarker(place) {
 
 	var request =  {
       reference: place.reference
-    };
+    };		
 
 	var service = new google.maps.places.PlacesService(map);	
+
+	service.getDetails(request, function(place, status) {
+			if (status == google.maps.places.PlacesServiceStatus.OK) {
+				 var content=""; 
+				 if (place.website) content = '<a target="_blank" href="'+place.website+'">'+place.website+'</a>';
+				 placesList.innerHTML += '<li>' + place.name + '<br>' + content + '</li>';			
+			}
+	});
+
 
 	allMarkers.push(marker);
 
@@ -138,9 +165,10 @@ function createMarker(place) {
         service.getDetails(request, function(place, status) {
           if (status == google.maps.places.PlacesServiceStatus.OK) {
             var contentStr = '<h5>'+place.name+'</h5><p>'+place.formatted_address;
-            if (!!place.formatted_phone_number) contentStr += '<br>'+place.formatted_phone_number;
-            if (!!place.website) contentStr += '<br><a target="_blank" href="'+place.website+'">'+place.website+'</a>';
-            contentStr += '<br>'+place.types+'</p>';
+            if (place.formatted_phone_number) contentStr += '<br>'+place.formatted_phone_number;
+            if (place.website) contentStr += '<br><a target="_blank" href="'+place.website+'">'+place.website+'</a>';
+						if (place.rating) contentStr += '<br>' + "User Rating: " + place.rating;
+            contentStr +='</p>';
             infowindow.setContent(contentStr);
             infowindow.open(map,marker);
           } else { 

@@ -30,7 +30,7 @@ function displayLocation(position) {
 	}
 	else {
 		var meters = computeDistance(position.coords, prevCoords) * 1000;
-		if (meters > 8) {
+		if (meters > 25) {
 			scrollMapToPosition(position.coords);
 			prevCoords = position.coords;
 		}

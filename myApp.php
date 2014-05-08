@@ -24,6 +24,11 @@ if ($result != 0) {
 <meta charset="utf-8">
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places"></script>
 
+ <link href="bower_components/bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+<link href="../stylesheets/navbar-fixed-top.css" rel="stylesheet">
+  <link href="../stylesheets/navmenu-push.css" rel="stylesheet">
 <link rel="stylesheet" href="../myLoc.css">
 </head>
 <body>
@@ -323,7 +328,36 @@ function degreesToRadians(degrees) {
 </div>
 
 <div id="location">
+
 </div>
+
+<div class="navbar navbar-inverse navbar-default navbar-fixed-top">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+   </div>
+
+   <div class="navmenu navmenu-inverse navmenu-fixed-left offcanvas">
+    <a class="navmenu-brand" href="#">Your Menu</a>
+    <ul class="nav navmenu-nav">
+      <li><a href="discussions.php"><span class="glyphicon glyphicon-home"></span> Discuss Your Experience</a></li>
+      <li><a href="http://selfservice.smu.ca"><span class="glyphicon glyphicon-book"></span> Self Service Banner</a></li>
+      <li><a href="http://smuport.smu.ca"><span class="glyphicon glyphicon-shopping-cart"></span> SMUport</a></li>
+      <li><a href="http://smu.ca/"><span class="glyphicon glyphicon-flag"></span> SMU Home</a></li>
+      <li><a href="map.html"><span class="glyphicon glyphicon-globe"></span> Map</a></li>
+      <li><a href="http://smu.ca/about/events.html"><span class="glyphicon glyphicon-dashboard"></span> Upcoming Events</a></li>
+    </ul>
+  </div>
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap-jasny/dist/js/bootstrap.min.js"></script>
+
+
+
 
 </body>
 </html>

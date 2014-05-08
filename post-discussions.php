@@ -1,9 +1,7 @@
 <?php
-    //db.php
-session_start();
- 
 
-    $db_location = "localhost";
+    //db.php
+      $db_location = "localhost";
     $db_username = "root";
     $db_password = "root";
     $db_database = "tumble";
@@ -13,27 +11,22 @@ session_start();
         or die ("Error - Could not open database");
 
 
-$sql="INSERT INTO info(name, password, email, interests)
+$sql="INSERT INTO info(name, discussions)
 VALUES
-('$_POST[name]','$_POST[password]','$_POST[email]','$_POST[interests]')";
+('$_POST[name]','$_POST[discussions]')";
 
-$_SESSION['user'] = $user_id;
-
-$name = $_POST['name']
-
-$_POST['name'] = $_SESSION['name'];
 
 if (mysql_query($sql,$db_connection)) {
 
-    header ("location: http://localhost:8888/myApp.php/"); 
+    header ("location: http://localhost:8888/discussions.php"); 
+
     }
     else {
 echo "Something is wrong";
 }
 
- 
+
 mysql_close($db_connection)
 
 ?>
-</body>
-</html>
+

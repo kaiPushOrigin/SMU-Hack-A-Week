@@ -1,17 +1,14 @@
 
-
-
-
-var js_var = "<?php echo $interests; ?>";
-alert(js_var);
 var watchId = null;
 var map = null;
 var infowindow=null;		 															//global variables
 var prevCoords = null;
 var allMarkers = [];
 var bound = new google.maps.LatLngBounds();
-var key_array = js_var;
+var key_array = [];
 var placesList=null;
+
+key_array = js_var.split(",");
 
 window.onload = getMyLocation;
 

@@ -1,7 +1,7 @@
 
 <?php include "db.php"; ?>
 
-<?php $sql = "SELECT distinct interests FROM info GROUP BY interests;";
+<?php $sql = "SELECT distinct interests FROM info WHERE name = '$name';";
 
 $result = mysql_query($sql)
         or die(mysql_error());

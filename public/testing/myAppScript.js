@@ -1,13 +1,16 @@
-/* myLoc.js */
 
 var watchId = null;
 var map = null;
-var infowindow=null;		 															//global variables
+var infowindow=null;		 															 																				
 var prevCoords = null;
 var allMarkers = [];
 var bound = new google.maps.LatLngBounds();
-var key_array=['food','greekfood','sextoys','museums'];
+var key_array=[];
 var placesList=null;
+
+alert(js_var);
+
+key_array = js_var.split(",");
 
 window.onload = getMyLocation;
 
@@ -30,7 +33,7 @@ function displayLocation(position) {
 	}
 	else {
 		var meters = computeDistance(position.coords, prevCoords) * 1000;
-		if (meters > 25) {
+		if (meters > 8) {
 			scrollMapToPosition(position.coords);
 			prevCoords = position.coords;
 		}
@@ -48,14 +51,14 @@ function showMap(coords) {
 	};
 	var mapDiv = document.getElementById("map-canvas");
 	map = new google.maps.Map(mapDiv, mapOptions);
-	
+
 	// add the user marker
 	var title = "Your Location";
 	var content = "You are here";		
-	
+
 	addMarker(map, googleLatAndLong, title, content);
 	addNearbyPlaces(map, googleLatAndLong);
-	
+
 }
 
 function addMarker(map, latlong, title, content) {
@@ -66,11 +69,11 @@ function addMarker(map, latlong, title, content) {
 		clickable: true,
 		icon:'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
 	};
-	
+
 	var marker = new google.maps.Marker(markerOptions);
-	
+
 	allMarkers.push(marker);
-	
+
 	var infoWindowOptions = {
 		content: content,
 		position: latlong
@@ -78,7 +81,7 @@ function addMarker(map, latlong, title, content) {
 
 	var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
 
-	
+
 	google.maps.event.addListener(marker, 'click', function() {
 		infoWindow.open(map);
 	});
@@ -95,7 +98,7 @@ function addNearbyPlaces(map, googleLatAndLong){
      		radius: 500,
      		keyword: key_array[i]
   	 		};
-	
+
 	 			infowindow = new google.maps.InfoWindow();
   			var service = new google.maps.places.PlacesService(map);
   			service.nearbySearch(request, callback);
@@ -107,7 +110,7 @@ function callback(results, status, pagination) {
     for(var i = 0; i < results.length; i++) {
       createMarker(results[i]);
     }
-		
+
 		setMapBounds();
 								 				 			 							// to set maps position
 		if (pagination.hasNextPage) {
@@ -137,17 +140,17 @@ function createMarker(place) {
 	else
 			 var image = null;
 
-	
+
   var marker = new google.maps.Marker({
     map: map,
 		icon: image,
     position: placeLoc
   });
-	
+
 	var request =  {
       reference: place.reference
     };		
-		
+
 	var service = new google.maps.places.PlacesService(map);	
 
 	service.getDetails(request, function(place, status) {
@@ -157,12 +160,12 @@ function createMarker(place) {
 				 placesList.innerHTML += '<li>' + place.name + '<br>' + content + '</li>';			
 			}
 	});
-			
-	
+
+
 	allMarkers.push(marker);
-	
+
 	// setting content on markers
-	
+
 	google.maps.event.addListener(marker,'click',function(){
         service.getDetails(request, function(place, status) {
           if (status == google.maps.places.PlacesServiceStatus.OK) {
@@ -197,13 +200,13 @@ function scrollMapToPosition(coords) {
 	var longitude = coords.longitude;
 
 	var latlong = new google.maps.LatLng(latitude, longitude);
-	
+
 	deleteMarkers(); 											 //deleting old markers
-	
+
 	// add the new marker
 	addMarker(map, latlong, "Your location", "You are here ");
 	addNearbyPlaces(map, latlong);
-	
+
 }
 
 
@@ -227,7 +230,7 @@ function setMapBounds(){
   {
     bound.extend(allMarkers[i].getPosition());
   }
-	
+
   map.fitBounds(bound);	
 }
 
@@ -246,7 +249,7 @@ function displayError(error) {
 	var div = document.getElementById("location");
 	div.innerHTML = errorMessage;
 }
-		 
+
 
 
 
@@ -274,5 +277,4 @@ function degreesToRadians(degrees) {
 	return radians;
 }
 
-// ------------------ End Ready Bake -----------------
- 
+

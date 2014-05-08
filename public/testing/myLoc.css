@@ -1,13 +1,9 @@
-/*
- * myLoc.css
- *
-*/
 html, body, #map-canvas {
         height: 100%;
         margin: 0px;
         padding: 0px
       }
-			
+
 #results {
         font-family: Arial, Helvetica, sans-serif;
         position: absolute;

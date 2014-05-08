@@ -1,7 +1,14 @@
+<?php 
 
-<?php include "db.php"; ?>
+session_start();
 
-<?php $sql = "SELECT distinct interests FROM info GROUP BY interests;";
+include "db.php";
+
+	
+
+$re = $_SESSION['meow'];
+
+$sql = "SELECT distinct interests FROM info WHERE name = '$re';";
 
 $result = mysql_query($sql)
         or die(mysql_error());
@@ -16,14 +23,17 @@ if ($result != 0) {
 }
 ?>
 
-
+<!doctype HTML>
 <html>
 <head>
 <title>Wherever you go, there you are</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
 <meta charset="utf-8">
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places"></script>
-<script src="myAppScript.js"></script>
+<script>
+var js_var = "<?php echo $interests; ?>";
+</script>
+<script src ="myAppScript.js"></script>
 <link rel="stylesheet" href="myLoc.css">
 </head>
 <body>

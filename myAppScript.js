@@ -1,12 +1,14 @@
 
 var watchId = null;
 var map = null;
-var infowindow=null;		 															//global variables
+var infowindow=null;		 															 																				
 var prevCoords = null;
 var allMarkers = [];
 var bound = new google.maps.LatLngBounds();
-var key_array = [];
+var key_array=[];
 var placesList=null;
+
+//alert(js_var);
 
 key_array = js_var.split(",");
 
@@ -110,9 +112,13 @@ function callback(results, status, pagination) {
     }
 
 		setMapBounds();
-								 				 			 							// to set maps position
-		if (pagination.hasNextPage) {
-			 sleep:2;
+
+   }								 				 			 					
+					// to set maps position
+   if (pagination.hasNextPage) {
+
+	sleep:2;
+
       var moreButton = document.getElementById('more');
 
       moreButton.disabled = false;
@@ -120,12 +126,11 @@ function callback(results, status, pagination) {
       google.maps.event.addDomListenerOnce(moreButton, 'click',
           function() {
         moreButton.disabled = true;
-				sleep:2;
         pagination.nextPage();
       });
+
     }
   }
-}
 
 function createMarker(place) {
   var placeLoc = place.geometry.location;
@@ -136,7 +141,7 @@ function createMarker(place) {
             new google.maps.Size(25, 25));
   } 
 	else
-			 var image = null;
+	    var image = null;
 
 
   var marker = new google.maps.Marker({
@@ -144,6 +149,16 @@ function createMarker(place) {
 		icon: image,
     position: placeLoc
   });
+
+  street = new google.maps.StreetViewPanorama(document.getElementById("street"), { 
+
+        position: placeLoc,
+        zoomControl: false,
+        enableCloseButton: false,
+        addressControl: false,
+        panControl: false,
+        linksControl: false
+      });	
 
 	var request =  {
       reference: place.reference
@@ -162,6 +177,11 @@ function createMarker(place) {
 
 	allMarkers.push(marker);
 
+/*
+	var side_bar_html = "["+allMarkers.length+"]<a href='javascript:google.maps.event.trigger(allMarkers["+parseInt(allMarkers.length-1)+"],\"click\");'>"+place.name+",     "+place.vicinity+"</a><br>";
+	document.getElementById('side_bar').innerHTML += side_bar_html;
+*/
+
 	// setting content on markers
 
 	google.maps.event.addListener(marker,'click',function(){
@@ -169,7 +189,7 @@ function createMarker(place) {
           if (status == google.maps.places.PlacesServiceStatus.OK) {
             var contentStr = '<h5>'+place.name+'</h5><p>'+place.formatted_address;
             if (place.formatted_phone_number) contentStr += '<br>'+place.formatted_phone_number;
-            if (place.website) contentStr += '<br><a target="_blank" href="'+place.website+'">'+place.website+'</a>';
+            if (place.website) contentStr +='<br><a target="_blank" href="'+place.website+'">'+place.website+'</a>';
 						if (place.rating) contentStr += '<br>' + "User Rating: " + place.rating;
             contentStr +='</p>';
             infowindow.setContent(contentStr);
@@ -274,3 +294,12 @@ function degreesToRadians(degrees) {
 	radians = (degrees * Math.PI)/180;
 	return radians;
 }
+
+
+var toggle = function() {
+  var mydiv = document.getElementById('results');
+  if (mydiv.style.display === 'block' || mydiv.style.display === '')
+    mydiv.style.display = 'none';
+  else
+    mydiv.style.display = 'block'
+  }

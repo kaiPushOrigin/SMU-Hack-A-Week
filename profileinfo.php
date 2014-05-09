@@ -16,18 +16,20 @@
   <link href="bower_components/bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
 
           <!-- Custom styles for this template -->
-      <link href="stylesheets/carousel.css" rel="stylesheet">
+
       <link href="stylesheets/signin.css" rel="stylesheet">
+            <link href="stylesheets/background.css" rel="stylesheet">
+
     </head>
 <!-- NAVBAR
   ================================================== -->
-  <body>
+  <body> <br /> <br />
 	<?php include "db.php"; ?>
         <!--signin-->
         <div class="container">
 <div class="progress progress-striped active">
-  <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-    <span class="sr-only">50% Complete</span>
+  <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 33%"> <br />
+    <span class="sr-only">33% Complete</span>
   </div>
 </div>
           <form class="form-signin" role="form" action="profileform.php" method="post" onSubmit='validate(); return false;'>

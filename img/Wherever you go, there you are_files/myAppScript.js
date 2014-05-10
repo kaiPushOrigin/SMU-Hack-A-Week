@@ -150,7 +150,15 @@ function createMarker(place) {
     position: placeLoc
   });
 
-  
+  street = new google.maps.StreetViewPanorama(document.getElementById("street"), { 
+
+        position: placeLoc,
+        zoomControl: false,
+        enableCloseButton: false,
+        addressControl: false,
+        panControl: false,
+        linksControl: false
+      });	
 
 	var request =  {
       reference: place.reference

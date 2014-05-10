@@ -1,0 +1,412 @@
+_xdc_._fr7sty && _xdc_._fr7sty( {
+   "html_attributions" : [
+      "Listings by \u003ca href=\"http://www.yellowpages.ca/\"\u003eYellowPages.ca\u003c/a\u003e"
+   ],
+   "next_page_token" : "CvQB4gAAACtzQka5KWzODIvXlCGEY9rtpC42qnjgmY1TQbX9PGt_qoZ2rCQ4GiGj4QZrfabTa-_SpEH8HC4fRjPrynkbAr_lKiuVnHhdUQ54ZC-_wNLGZO3-6K98ZdsJGdIXoJ94kMa6AMGa4_N6rcPvdtvaGFPlo9GJch-L_DRHaaquSSTX-MkQMylonxD04CkV2PgeD7ZTBl-Cbg_WG2mEN4T2OgqLdPanij1mVqngx8Taq5RFR42tu-mJjgzqB0e3LUW862RNWOjZO6SOxjcugojkWs2w6i2UwvjwbQqPbFrLZJ0jNgoutpo6F68XVMW1ESrxpRIQIe8yreGW2rgZTvzGa2YRjRoUji7lIj-CebTt9XVRkC9ZvFW7kaQ",
+   "results" : [
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.6429718,
+               "lng" : -63.5820166
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 44.6444889,
+                  "lng" : -63.57972629999999
+               },
+               "southwest" : {
+                  "lat" : 44.64129399999999,
+                  "lng" : -63.5845308
+               }
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "c1a14457f5b5233c84a5bf42e04af1526858bbeb",
+         "name" : "Halifax Public Gardens",
+         "reference" : "CpQBggAAAH8PhXt7j-KpHO8uzD_C383q3hncmkBuR2TlQYJOpcMy--A1d_wLFh6Px8w75qGcZyCNf3nYh5osFAYdDoyIaCDTWczgCnaZlbBNLlsAkf4o00dXcGdYtJ-SYcki1Y4V0zG57cj1MPYksBuCI3wgV1et3yBCJog3qoCv5-Is_2laB3zEA1uDsQvgaYnvT9J46xIQenXKAxZMwiKIOt-cyvrSwRoUVxiDsbYoqSvq22Ft5Qv4EB3k-iI",
+         "types" : [ "park", "establishment" ],
+         "vicinity" : "South End"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.6457922,
+               "lng" : -63.5778191
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 44.652882,
+                  "lng" : -63.5672994
+               },
+               "southwest" : {
+                  "lat" : 44.6398499,
+                  "lng" : -63.5849611
+               }
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "d098421f7858055db0e57703cb499b925463210e",
+         "name" : "Downtown Halifax",
+         "reference" : "CqQBkgAAANIcpHQguwjEu3d3725B8y1TCdbcq5HcDDnjQkeptIq6lwMugsPbHNjthWN0SqAewWVKalqBCMLEGxBAH4IlFkRO2ir3LN35Gw1PklQYgkm_W-JUag6NMo1Dl9-EVbApPfK5_pNM89ICFplm5l1hfHQ_iXyWrkyPMYQ30GbxtGe-wjQfAJs4btV3b-3UXvo7xqQBHq0Ik1XUP19AFjbElycSEAHs1ttMGRpubAR1696NyDAaFLkRDtnyV9hDB72E02EWdO1jd0eI",
+         "types" : [ "neighborhood", "political" ],
+         "vicinity" : "South End"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.642626,
+               "lng" : -63.579515
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "240d58b50cd50f364a11f2f5714c51d88ba2fa85",
+         "name" : "The Lord Nelson Hotel & Suites",
+         "photos" : [
+            {
+               "height" : 401,
+               "html_attributions" : [],
+               "raw_reference" : {
+                  "fife_url" : "https://lh4.googleusercontent.com/-NRYuJvORLIo/UuFAnwNPjoI/AAAAAAAAcHo/Q0ieC6aDn8E/s0/photo.jpg"
+               },
+               "width" : 944
+            }
+         ],
+         "rating" : 3.9,
+         "reference" : "CpQBgQAAAL7cIYnfx-TS4LFx2PTCQbbFJ3ryJ30j2yTIW-poianP6NpB_nvdmEu6W2-ZcAtEGTmB12lStcIUy8-pxz7rSZ7DuTZurz8Gt632dFh_5_U6_qRt65tMkZ--9YDidNVPd2rNfrghk6NLybRqw_mNiRNXjAYn2J8zGnGSgXqxbOrBHxfwVLTkzOGJu8We1dcfyxIQodjc4RUDG92JpEuxy7p1dhoUpx97YLFZuwUGJ-AsCPgOV84Xm2E",
+         "types" : [ "lodging", "establishment" ],
+         "vicinity" : "1515 S Park St, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.644246,
+               "lng" : -63.573162
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/worship_general-71.png",
+         "id" : "265712f5fde9d71dc2dbede2f6288741770626de",
+         "name" : "St. Mary's Cathedral Basilica",
+         "photos" : [
+            {
+               "height" : 640,
+               "html_attributions" : [ "From a Google User" ],
+               "raw_reference" : {
+                  "fife_url" : "https://lh3.googleusercontent.com/-g3cjXKZmp44/T35Y2p0yUYI/AAAAAAAAAAU/uGE-htsVmEE/s0/St.%2BMary%2527s%2BCathedral%2BBasilica"
+               },
+               "width" : 480
+            }
+         ],
+         "reference" : "CoQBfwAAAPOIp-q3BbCsNMXVmzAd7S9F2hBFrk4lq0BoOeLYmhxCAsPGeG9UOsmJ1pCI_mD3aoZPYB6kV5BTMYEifaWHssU0M5alHiPkMeKPnxH2RQsNJE90ZoDk1OtSYCu-1KspcAgLP3jLAt6AWnxFJjxNfeyBXY32lr3WCKuh3KIDARY_EhCmsjlhxfxKOQPur0I9dK-qGhRWbCmAmP5-qaKgVkcg-KPjfQoXsw",
+         "types" : [ "church", "place_of_worship", "establishment" ],
+         "vicinity" : "5221 Spring Garden Rd, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.644081,
+               "lng" : -63.574993
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/library-71.png",
+         "id" : "97486e7de459cfaa4cafd0bd3c0f9937b178f55b",
+         "name" : "Halifax Regional Library",
+         "reference" : "CoQBegAAAK3Q6LWltAYkwYuyPkUcf6mBsTQF-r4FhzBQUbjQ2TgaKo-KDTcroLewJcr-RjeHyUrGCmSxtlTkvyRFvDFHt8JRR2hZh87iOCLc_h3dRL0ChKfRq5KPo2oALTUNRWYQu5DRntCVl8wJEIy8cuk7WzNjA5UHABcfywVZdlHcP0MhEhCjAJd4eaH-TT05e0-Uf6LzGhQL8tf-HaW93WM4Y5JRyQW6A-sOVw",
+         "types" : [ "library", "establishment" ],
+         "vicinity" : "5381 Spring Garden Road Halifax, NS B3J 1E9"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.637383,
+               "lng" : -63.582697
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "4ce206754b7cdfd516fd944cc5e1aa56928c011c",
+         "name" : "Iwk Health Centre",
+         "rating" : 4.5,
+         "reference" : "CoQBcwAAAFleU4WXfCw7hNW7ZMAv-9rN4RVpry6_pDCo8WltGYv0wh6r8ZrdZRPquJe6dM8h1xicEXTlokaK7IV9hYEShdfEETrgPLQSryW1sp9UseHkSOpA9ccKxp_4iPFYXamvqtUXope1MSDwx7Onek1llWnrDE96cshVQZ1LfSyMr8G5EhC7Xu-UN4xnI1kdhSqcR48WGhTbDcXhJmyeqhOqKsK55OT_kVsg9A",
+         "types" : [ "hospital", "establishment" ],
+         "vicinity" : "5850-5980 University Ave, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.640403,
+               "lng" : -63.579811
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/worship_general-71.png",
+         "id" : "4c95b65cb5a2e513cbb4cce93229c0adcf623b10",
+         "name" : "Cathedral Church of All Saints",
+         "reference" : "CpQBgQAAAFaF7hSZwB9KT5UTS8Ss7vflUTZTW7Kg9w2wV1UmrsXVFKENyE7VKHtEpzPH-p9P8xkUyUh0-Uvk_47env1GbmGeSlBxYqWe1h-M4Gri2Z-C2PVSsx7W2sVfBW4173N-cx_fEmZmkyktuBCH_B4GE897vThfbot7sAfJE5Nos3h3f3UjmRnonMjkpA_y0auajxIQr7TfUsAc7Y4-SeVIU70gfxoUjcORv93biu14ym4Xvoh81WQTfVs",
+         "types" : [ "church", "place_of_worship", "establishment" ],
+         "vicinity" : "1330 Martello St, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.6431,
+               "lng" : -63.578673
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "ed32c589a60c5bc197b824eb5f664005fde60ecb",
+         "name" : "Park Lane",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "rating" : 4.3,
+         "reference" : "CnRsAAAA17LHMKz2ZZR9Lisyt5bhchUEo_LvmDorIHCa3mhEvk6FElC-eJvjR264TOvNp7SOFMfbolNlyuO79qDWGh46mpGYQEn1SFSCe9MqafngXXhHPSC-iVnEnMYiZtEGtoOQ3UAt-w7pav_SEjZgXK4b3xIQg9991vELTBWySNnWM0bO9hoUOCn82cddYrX0yQQw9tiWLCsneb0",
+         "types" : [ "shopping_mall", "establishment" ],
+         "vicinity" : "5657 Spring Garden Rd, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.642972,
+               "lng" : -63.582017
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "003c67ffb7df557715a9b3b80fd76e6899fa94e2",
+         "name" : "Halifax Public Gardens",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1357,
+               "html_attributions" : [ "From a Google User" ],
+               "raw_reference" : {
+                  "fife_url" : "https://lh4.googleusercontent.com/-zjqX7Ote1KI/Utgq4AcvjsI/AAAAAAAAD1Y/o2SSZ5U9x0o/s0/Halifax%2BPublic%2BGardens%252C%2BNova%2BScotia"
+               },
+               "width" : 2048
+            }
+         ],
+         "rating" : 4.7,
+         "reference" : "CoQBeAAAAOl7wbDffKA1aWp1ZwJKlziugjp72Nu9l7CPUKOZbRcK_5ryaqUpOBZgHX9WyePpnN0QI3jKo33lSBnYLDc16TKjSw1Z33TNnA-32CuLelfKIgXKzk8lbxoskpzRX4jLo1aMe1mqSGCmMsAvPjgDRm2LuCTQ0Cljm1vCicA0b0hgEhCro4rYrr9CCECi7OJVGz8pGhTZLzCoHNkcELW2weRZp-IBOBrW4Q",
+         "types" : [ "park", "establishment" ],
+         "vicinity" : "Spring Garden Rd, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.642667,
+               "lng" : -63.57816
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "4a1a9cde0c3094bf58cbf77a49350d28e8e822f2",
+         "name" : "Spring Garden Place",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 99,
+               "html_attributions" : [],
+               "raw_reference" : {
+                  "fife_url" : "https://lh3.googleusercontent.com/-h2BvK4RzxAU/UyKGq-dhBPI/AAAAAAAAlqg/NAV6nGQwUKc/s0/photo.jpg"
+               },
+               "width" : 123
+            }
+         ],
+         "reference" : "CoQBdgAAAKp5bAPbaMXljKyKA2XHyLvFDT0vI3PsK0REa4QnV48rDwGOnotMhaMoiGkgJ3eMAe_3vsgcluVZ6ItV7FYvArhc6BtyGN0Rk-Ncpg6e3CUD4sAqLN3pqet9s9_n9uUK5eWBzzkyRXjwm4wxNz6PrPZEyCfAW9sDnIXDTS9B0cvJEhBcu_BBx7Nw-QZNTxI3szZ0GhRLZY85hNt8plx11c9JOBYod9McGw",
+         "types" : [ "real_estate_agency", "shopping_mall", "establishment" ],
+         "vicinity" : "5640 Spring Garden Rd, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.64385,
+               "lng" : -63.573813
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "f808039d931efdf8400b42d50ac1554265321d93",
+         "name" : "Courts in Metro Halifax",
+         "reference" : "CoQBegAAAIoIapGaL3R9WuVOBfHhJXsUEHVjG9ho8lid8sBzF6f04Zcs9UhluQwXBDMYRKCSW3rp6l1PHgyCesYXV7osCVUX5aalVIyzOxYeJmG_UN-4aQj_v-fGSuTvzXZvRTrUjDxSYdOsorIkXZm93bNYP4yToGsoqW4Fiip_OYfU20uxEhBa9yKan9mUzk2cWWl69DUqGhSWf4WVydILmL1tpXKGENq54JRSwQ",
+         "types" : [ "establishment" ],
+         "vicinity" : "5250 Spring Garden Rd, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.63622,
+               "lng" : -63.584305
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "6cd4795363e3cb1f1c3704f8f3373c119a0c89a6",
+         "name" : "Gorsebrook Junior High School",
+         "reference" : "CoQBgAAAABJ31TKNi_aFsG7UY0P3Fz_JiDGdGZHmZAcYwN-X3mnyNJTVdBT7qjw1-82TTZJt74BDXuSjAP1mTFoKPlI5qyX5Uga16YNzjZNFNBfxO0rN6_Z_F2ptuh98hKzmvDHE4ueV1ZYG_aH0OHcnef49H7ypTlYTBmQ8Kg2XSbo86gfYEhDbDclWT4TkSeF_FCXgoIi4GhS9y6aQa-xYV11QFrHBtGjZO5sNmg",
+         "types" : [ "school", "establishment" ],
+         "vicinity" : "Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.640673,
+               "lng" : -63.581959
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "e3187b5241aa1e12740f6b2a705ea44f5dac7534",
+         "name" : "Sacred Heart School of Halifax",
+         "photos" : [
+            {
+               "height" : 423,
+               "html_attributions" : [],
+               "raw_reference" : {
+                  "fife_url" : "https://lh3.googleusercontent.com/-Kr_gKYwmaCE/Ui3NvgsT2gI/AAAAAAAADVE/9kwRfefsZ0U/s0/photo.jpg"
+               },
+               "width" : 862
+            }
+         ],
+         "reference" : "CoQBgAAAAN1VZhkh3E7G3eQD8rz0RbRo-qYej5z9SKCjAAXNGABLY7y3agFCRlY_ke4monfCcLBZUuIdB3LROcpsQwlwQoZy6T0SfHDz9Len1HwyCOMO2H8kk4XyUFuaaE7g7KoNXeCpoyA4e-amvW_vi0WM0TRDfj2Rpt9fVWh_BQdmvvS7EhC8aYkKSZ7nVnEN33ASltJ_GhQaXVs6YVeBlADJbStFu3RxjHafCQ",
+         "types" : [ "school", "establishment" ],
+         "vicinity" : "5820 Spring Garden Rd, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.637365,
+               "lng" : -63.58121
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "56de63332e7326d620428d5fa8c3947329fa4793",
+         "name" : "Nova Scotia Rehabilitation Centre",
+         "reference" : "CpQBhAAAACHZ1xHtK_N0iPuVWZ4l0cIpj7VBPuPONWYJTpLHd8tn6ejD4LtS0mbfXtNo1mnF98X0JO_fGnqf-zvpsEIqGYxholo-goNsQni7pOL__HDbV0T35v9PIqPLdOpYwmXbMsUzKHDXmClu-2Ril_0kBRTWAn30ZaCHFD88hl0pCj0J-IIJL3NM5SLHTaz1S4arSBIQw6_xO4McKWp6_JO2X6VuJxoUrIXo2ilFFO_DUYdJPiWAfiHbZpE",
+         "types" : [ "hospital", "establishment" ],
+         "vicinity" : "1341 Summer St, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.64418,
+               "lng" : -63.572532
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "4a47385cd38296253cbde6470e5c2422cb487d27",
+         "name" : "Old Burying Ground",
+         "reference" : "CoQBdAAAAMUN3CMKws5IWRM7dzw_h4mrNq9YGQQ1dfRK8SQTapmG2QiEnH567z0rWnund4_FEJFH-5irrTS_yM4c0rwrCzY6IIYeWDQWGXbAmWMu24jQ_L8NyuuHTcxbL5FLs1ObSZo66HkQNpddz5JEZ0acsiS5bXsRAJuVKwqQvDeUGV1wEhB2u4JZT6S6xMjDfMNQ1hnvGhTosGSrS8w2Qsg1xWw0fKtkPBU2PQ",
+         "types" : [ "cemetery", "establishment" ],
+         "vicinity" : "Barrington St, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.642354,
+               "lng" : -63.578956
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+         "id" : "acdcb1903c6afbb13770e10f7421c2e38a7895c7",
+         "name" : "Your Father's Moustache",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 1444,
+               "html_attributions" : [],
+               "raw_reference" : {
+                  "fife_url" : "https://lh5.googleusercontent.com/-VpzZEA9k0CM/Uq-PMf-gfJI/AAAAAAAAYCs/yUHpQ3MGVKE/s0/photo.jpg"
+               },
+               "width" : 956
+            }
+         ],
+         "rating" : 3.9,
+         "reference" : "CoQBeQAAAHzRAs-TGljz4klfYC-vQUzYlDqyp74ru1aEt1dWcPCSlpZC7svjpQL5EPsu7E9kV2dY7HuE-ouNqhwe6zw3gGs6lki7NbL_zj7t2wZqLCuPzuGMq4ae56Z6j0E3asA4YvZJD6LFiFLWdl0oVYvIBJfwjXAC9Y_dCX83Grg3SEv5EhDocto2I5dM2LGquDemny16GhQiCAl9sOlDLM6FG9oK0sk6lO350w",
+         "types" : [ "bar", "restaurant", "food", "establishment" ],
+         "vicinity" : "5686 Spring Garden Rd, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.639312,
+               "lng" : -63.578072
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "ebfc04a51cc68ee90d439159ebb399fba3b2fb09",
+         "name" : "Garden South Park Inn",
+         "reference" : "CoQBdwAAABAOvVKHzVWSE430OKcaA7_MH6xsYraQfB9oTc7zbLZAuvcti1zKhnrywfk4rF8D_SN5sO3SyevA7B6ibycxSlTpj5ltkiYnHR6pkuU6PCfhOc10ZBBtrVG8-3wdC2kcCX2LmpuOvPR7QU8ROBWsMQIj4Q1ch_xnELkOxL8Lx3vCEhCzkwE8gS-LSMHZYJ4RRTZuGhQQEuecjrpH4Uwf_cLz5-FkBwwcVw",
+         "types" : [ "lodging", "establishment" ],
+         "vicinity" : "1263 S Park St, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.644014,
+               "lng" : -63.577052
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "dae36fe61837f7b5702a5a9b4730c029e778f06c",
+         "name" : "Cha Baa Thai Restaurant",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 972,
+               "html_attributions" : [ "From a Google User" ],
+               "raw_reference" : {
+                  "fife_url" : "https://lh4.googleusercontent.com/-4kQDzZAnt1M/UBmw951LLTI/AAAAAAAACRg/HPJQLjveLi4/s0/Chabaa%2BThai%2BRestaurant"
+               },
+               "width" : 1296
+            }
+         ],
+         "rating" : 4.2,
+         "reference" : "CoQBegAAAHC17lDP1QE_MIcs73lrRmf8MzumLVey3HTX2Bl7vyV_QOFsUfQnR_P7Kv19cx6GPK9as3DguWDWuTx5SEe_Lg39vD2CfijwpUx1UDE2eRRpuf13YisS7h58Fl62Cht5-xcyFAkpl0BAGdfBaFsE6zm2Y-UOrVeJLRwBkk_5SK5wEhD1_FOShmVa5QgcIFFPT0XBGhQmavyUrpWrHihiMNXI1SkFWibtXw",
+         "types" : [ "restaurant", "food", "establishment" ],
+         "vicinity" : "1546 Queen St, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.640498,
+               "lng" : -63.574402
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "95fc82d30a5aeff99dab8c5a5e6565c9ede94201",
+         "name" : "Alexandra's Pizza",
+         "rating" : 3.7,
+         "reference" : "CoQBcwAAAB-mbx_BzIWAX_2uVomjsTk5gR8be1SEhcfYqDJXph01CKMWYTwqVA5TQAhW43IgUTT8YW-s8AgvIPHVaYGFGDiOgvh2LcTLIWLSCaWw6eu-qBW_tBNPPmxHrYs-b_gYonKiYR01JpKKOG6ww5FawWws860uhU0RCk9YetgYnGqtEhAz8zWRewG7cUtK1CmGs3U-GhR-vbgET0jePWLL7ocRvFAYhTLZpg",
+         "types" : [ "restaurant", "food", "establishment" ],
+         "vicinity" : "1263 Queen St, Halifax"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 44.63488100000001,
+               "lng" : -63.5788066
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 44.6528491,
+                  "lng" : -63.55779649999999
+               },
+               "southwest" : {
+                  "lat" : 44.617496,
+                  "lng" : -63.61487380000001
+               }
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "909acd1c13d8d0fcd8bcd91e2b28ff65a42c9fb2",
+         "name" : "South End",
+         "reference" : "CpQBigAAAB-xnhavt5CQslKlYP_stMRXFwEEZG5CNFFqR-vmbwQHnv1PvwI0-x39ub5ExsdUGe7-sn15DaxBXFpZLzyNmubcCHhXp1mNgg6Kktvdq1f48Gw9rWR-vfqTtXJ3N6NamSULymE8ZxfDsWq8bMV2MMwAaytSbIVJ5Nz4M--hw0lIHzKdAeZs1T0Lg4wrUeRkURIQUbgwLH370-5SZyPUkgLF5hoUVwKRLhGPFAKUVGczkajHnZKyEJU",
+         "types" : [ "sublocality", "political" ],
+         "vicinity" : "South End"
+      }
+   ],
+   "status" : "OK"
+}
+ )

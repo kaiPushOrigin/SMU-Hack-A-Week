@@ -1,0 +1,58 @@
+_xdc_._7n97yi && _xdc_._7n97yi( {
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1330",
+            "short_name" : "1330",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Martello St",
+            "short_name" : "Martello St",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Halifax",
+            "short_name" : "Halifax",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "NS",
+            "short_name" : "NS",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Canada",
+            "short_name" : "CA",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "B3H 4Z1",
+            "short_name" : "B3H 4Z1",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003e1330 Martello St\u003c/span\u003e, \u003cspan class=\"locality\"\u003eHalifax\u003c/span\u003e, \u003cspan class=\"region\"\u003eNS\u003c/span\u003e \u003cspan class=\"postal-code\"\u003eB3H 4Z1\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eCanada\u003c/span\u003e",
+      "formatted_address" : "1330 Martello St, Halifax, NS, Canada",
+      "formatted_phone_number" : "(902) 423-6002",
+      "geometry" : {
+         "location" : {
+            "lat" : 44.640403,
+            "lng" : -63.579811
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/worship_general-71.png",
+      "id" : "4c95b65cb5a2e513cbb4cce93229c0adcf623b10",
+      "international_phone_number" : "+1 902-423-6002",
+      "name" : "Cathedral Church of All Saints",
+      "reference" : "CpQBgQAAAD1WklyrMlXzT1V19dZ6qg5ShOR51ragVeskv8aagOrTMeXtBwNXyM3i2xiQZL6UzXNYtBfrilnvTOzuwqAfAD9FsBbGTnc09esVbbSgs0I_taoyJLrk7WS6OgLnv3yFCZsakhF7maI9K2gOD3nwEQyosOMqSfClZHko0S6exJuTiAFcV_1gfjA1GotsrPJFBRIQj0a65-32f0sO4LeMKwAkuBoUkkby23AsDuIoG94ncffFRJahBMY",
+      "types" : [ "church", "place_of_worship", "establishment" ],
+      "url" : "https://plus.google.com/114551634980782992270/about?hl=en-US",
+      "utc_offset" : -180,
+      "vicinity" : "1330 Martello St, Halifax",
+      "website" : "http://www.cathedralchurchofallsaints.com/"
+   },
+   "status" : "OK"
+}
+ )

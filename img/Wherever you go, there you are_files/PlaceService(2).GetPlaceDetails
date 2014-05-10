@@ -1,0 +1,166 @@
+_xdc_._l0c05r && _xdc_._l0c05r( {
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1515",
+            "short_name" : "1515",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "S Park St",
+            "short_name" : "S Park St",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Halifax",
+            "short_name" : "Halifax",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "NS",
+            "short_name" : "NS",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Canada",
+            "short_name" : "CA",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "B3J 2L2",
+            "short_name" : "B3J 2L2",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003e1515 S Park St\u003c/span\u003e, \u003cspan class=\"locality\"\u003eHalifax\u003c/span\u003e, \u003cspan class=\"region\"\u003eNS\u003c/span\u003e \u003cspan class=\"postal-code\"\u003eB3J 2L2\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eCanada\u003c/span\u003e",
+      "formatted_address" : "1515 S Park St, Halifax, NS, Canada",
+      "formatted_phone_number" : "(902) 423-6331",
+      "geometry" : {
+         "location" : {
+            "lat" : 44.642626,
+            "lng" : -63.579515
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+      "id" : "240d58b50cd50f364a11f2f5714c51d88ba2fa85",
+      "international_phone_number" : "+1 902-423-6331",
+      "name" : "The Lord Nelson Hotel & Suites",
+      "photos" : [
+         {
+            "height" : 401,
+            "html_attributions" : [],
+            "raw_reference" : {
+               "fife_url" : "https://lh4.googleusercontent.com/-NRYuJvORLIo/UuFAnwNPjoI/AAAAAAAAcHo/Q0ieC6aDn8E/s0/photo.jpg"
+            },
+            "width" : 944
+         }
+      ],
+      "rating" : 3.9,
+      "reference" : "CpQBgQAAAIh0Q8nIgt2oOpDxcYyOaFhdqAe0shXUUgthy0qV4PONDu-xz9uL67IXl9fEPc03TLRWwVZ0jHjIh8Nvj5YbhuEy97Pgwj2q-Z2BBwUprxZ_vzvYZ2188LjoFDFt2qiRTZFejax04K6siGjbdofdFWvtfqiCQTkaCNA-7ebhUUH4ECQy53_bqgtZb11W_0HuRxIQb3-0bXbl4srX9cFgF4yMYBoUP_mpl6nkolCTQxZ0Gh7ybOUmvWo",
+      "reviews" : [
+         {
+            "aspects" : [
+               {
+                  "rating" : 0,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "Vicky Rogers",
+            "author_url" : "https://plus.google.com/112586001171311013617",
+            "language" : "en",
+            "rating" : 1,
+            "text" : "My partner and myself stayed here and booked the Savour Love package for an early V-Day. To start everything off, we had to ask them to park our car. She had no idea the valet parking came with our package. She didn&#39;t really know anything came with our package. The TVs in our room was really hard to use. We called the front desk and they just said we had to push the remote buttons harder. We did that and still nothing, We went out for supper at the Waterfront Warehouse and that was the best part of our stay in town. We thought we would be getting our &quot;Turn down service&quot; while we were out for supper. We stayed out until late that night and when we got back, our beds weren&#39;t touched. My partner called down to ask about it and they said that our &quot;turn down service&quot; was the wine they had waiting for us in the room when we checked in at 2:30pm that afternoon. Then the girls laughed at my partner for calling and asking. (Worst white wine ever. Must have cost buck, if that) The walls are super thin. We could hear the TV next door all night(at least they had a TV to watch). Our shower didn&#39;t look like it was cleaned (had hairs all over the walls). In the morning we went down for breakfast. We got a plate between the 2 of us and picked up 2 cold hard boiled eggs, a strawberry each, a few cuts of melon and a yogurt. There wasn&#39;t much else to choose from (and we are not picky people at all). We sat down and a lady got us some tea. Then she came to our table asking how we wanted to pay. I was shocked because I&#39;ve never had to pay for a breakfast like that before. Every hotel I&#39;ve been in (and that&#39;s a lot of hotels from traveling all over) this type of breakfast is free. It comes with your room. And we spent extra on our room for the package. Turns out there was a little sign tucked in the corner beside the elevator on our floor saying that this breakfast cost $12.99 PER PERSON! The ONLY reason we give The Lord Nelson Hotel &amp; Suites a star, is because the guys at the front doors were very nice. I wouldn&#39;t recommend this hotel to anyone.",
+            "time" : 1392928793
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "appeal"
+               },
+               {
+                  "rating" : 2,
+                  "type" : "facilities"
+               },
+               {
+                  "rating" : 3,
+                  "type" : "service"
+               }
+            ],
+            "author_name" : "Cristina C",
+            "author_url" : "https://plus.google.com/100345145463697694241",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "Very impressive. This is not your cookie-cutter hotel (it&#39;s way better!) The Atmosphere: This hotel is like walking into another era. Beautiful, Victorian-style, historic decor and pristine service. I&#39;ve been to upscale swanky hotels and this one tops it (and it&#39;s not even in the upscale genre!) Love the warm hospitality and talking to the doormen is like you&#39;ve known them forever. The rooms: they are standard rooms with older decor but functional. I love walking through the halls to get there (passing the old-style gold elevators it&#39;s filled with sparkling chandeliers, glass mirrors, and glass tables...stunning!) The Gym: very clean and functional. The neighbourhood: right in the downtown core so all the city is around you. Lots to see and do. Other tips: Perfect for wedding photos with a 1900s theme!",
+            "time" : 1364406154
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 0,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "Jeremy Reiswig",
+            "author_url" : "https://plus.google.com/118325038114178788286",
+            "language" : "en",
+            "rating" : 2,
+            "text" : "While it&#39;s nice to have a doorman to open the door for you, it would be nicer to have properly functioning wifi internet service.",
+            "time" : 1384515802
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "appeal"
+               },
+               {
+                  "rating" : 3,
+                  "type" : "facilities"
+               },
+               {
+                  "rating" : 3,
+                  "type" : "service"
+               }
+            ],
+            "author_name" : "Gil Grimes",
+            "author_url" : "https://plus.google.com/111059425313638441061",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "I have had the opportunity to stay in many hotels and a variety of locations. Some of them were excellent some of them were sketchy. I have also been lucky enough to stay in some older hotels both in and outside of Canada. Prior to staying at the Lord Nelson, my favorite hotel was the Fairmont in Banff. Now, I cannot honestly tell you that the Lord Nelson is as wonderful as the Fairmont in Banff, but it is in Halifax and not in Banff. That geographical distinction aside, the service and the attention to detail was similar. As I was waiting to get breakfast I spent 10 minutes watching them polish the brass railings on the mezzanine. Given that this is a Victorian-style hotel, there is a great deal of brass all over the place. All of it shines. I had the pleasure of staying in a small suite (a king size bed in one room, a small sitting area in the other). This more than met my needs at an affordable price. Additionally, the walls were thick enough that I did not hear my neighbours nor did I have much disturbance from the street. The bed was comfortable, the pillows were fluffy and enjoyable, and the rooms were quiet. It is located across from the gardens which are beautiful, and is within walking distance of pretty much anything you would want to see in downtown Halifax. It is definately hotel I will stay in again.",
+            "time" : 1365215678
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 0,
+                  "type" : "appeal"
+               },
+               {
+                  "rating" : 0,
+                  "type" : "facilities"
+               },
+               {
+                  "rating" : 0,
+                  "type" : "service"
+               }
+            ],
+            "author_name" : "Chris Wall",
+            "author_url" : "https://plus.google.com/108625555435987188654",
+            "language" : "en",
+            "rating" : 2,
+            "text" : "First night at 11pm a staff member just walked right into our room uninvited while we were all asleep and flipped on the light, this woke up the baby and the 2 other little guys and kept us up another 1.5 hrs trying to get them to go back to sleep. Ordered breakfast, it was $75 for pancakes, a waffle and eggs and bacon. Had a fly on my waffle and they also forgot an item as well, and the food was pretty cold. The walls are really thin, you hear people out in the hallway or next room quite easily. Next time I&#39;ll stay elsewhere.",
+            "time" : 1373368592
+         }
+      ],
+      "types" : [ "lodging", "establishment" ],
+      "url" : "https://plus.google.com/115206240866900531365/about?hl=en-US",
+      "user_ratings_total" : 19,
+      "utc_offset" : -180,
+      "vicinity" : "1515 S Park St, Halifax",
+      "website" : "http://www.lordnelsonhotel.com"
+   },
+   "status" : "OK"
+}
+ )

@@ -1,0 +1,302 @@
+_xdc_._m2c9zy && _xdc_._m2c9zy( {
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Spring Garden Rd",
+            "short_name" : "Spring Garden Rd",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Halifax",
+            "short_name" : "Halifax",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "NS",
+            "short_name" : "NS",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Canada",
+            "short_name" : "CA",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "B3J 3S9",
+            "short_name" : "B3J 3S9",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eSpring Garden Rd\u003c/span\u003e, \u003cspan class=\"locality\"\u003eHalifax\u003c/span\u003e, \u003cspan class=\"region\"\u003eNS\u003c/span\u003e \u003cspan class=\"postal-code\"\u003eB3J 3S9\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eCanada\u003c/span\u003e",
+      "formatted_address" : "Spring Garden Rd, Halifax, NS, Canada",
+      "geometry" : {
+         "location" : {
+            "lat" : 44.642972,
+            "lng" : -63.582017
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "003c67ffb7df557715a9b3b80fd76e6899fa94e2",
+      "name" : "Halifax Public Gardens",
+      "opening_hours" : {
+         "open_now" : false,
+         "periods" : [
+            {
+               "close" : {
+                  "day" : 1,
+                  "time" : "1400"
+               },
+               "open" : {
+                  "day" : 1,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 2,
+                  "time" : "1400"
+               },
+               "open" : {
+                  "day" : 2,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 3,
+                  "time" : "1400"
+               },
+               "open" : {
+                  "day" : 3,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 4,
+                  "time" : "1400"
+               },
+               "open" : {
+                  "day" : 4,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : {
+                  "day" : 5,
+                  "time" : "1400"
+               },
+               "open" : {
+                  "day" : 5,
+                  "time" : "0800"
+               }
+            }
+         ]
+      },
+      "photos" : [
+         {
+            "height" : 1357,
+            "html_attributions" : [
+               "\u003ca href=\"https://plus.google.com/106109465788790290017\"\u003eKen Lane\u003c/a\u003e"
+            ],
+            "raw_reference" : {
+               "fife_url" : "https://lh4.googleusercontent.com/-zjqX7Ote1KI/Utgq4AcvjsI/AAAAAAAAD1Y/o2SSZ5U9x0o/s0/Halifax%2BPublic%2BGardens%252C%2BNova%2BScotia"
+            },
+            "width" : 2048
+         },
+         {
+            "height" : 1280,
+            "html_attributions" : [
+               "\u003ca href=\"https://plus.google.com/102690604033489259151\"\u003eSammy Harris\u003c/a\u003e"
+            ],
+            "raw_reference" : {
+               "fife_url" : "https://lh4.googleusercontent.com/-H_xhr08QjFY/UieUKgei3pI/AAAAAAAAAcQ/feDPRVPNF8k/s0/2013-09-04"
+            },
+            "width" : 960
+         },
+         {
+            "height" : 1127,
+            "html_attributions" : [ "From a Google User" ],
+            "raw_reference" : {
+               "fife_url" : "https://lh5.googleusercontent.com/-t1DYOhIlnwk/T4qmIFxG_8I/AAAAAAAAAAo/ySBhn2cQdZM/s0/HPIM2714.JPG"
+            },
+            "width" : 2241
+         },
+         {
+            "height" : 1357,
+            "html_attributions" : [
+               "\u003ca href=\"https://plus.google.com/106109465788790290017\"\u003eKen Lane\u003c/a\u003e"
+            ],
+            "raw_reference" : {
+               "fife_url" : "https://lh6.googleusercontent.com/-dVkRP-iBlac/UtgnPPa9VxI/AAAAAAAAD08/y-TTaMrPqtw/s0/Halifax%2BPublic%2BGardens%252C%2BNova%2BScotia"
+            },
+            "width" : 2048
+         },
+         {
+            "height" : 1357,
+            "html_attributions" : [
+               "\u003ca href=\"https://plus.google.com/106109465788790290017\"\u003eKen Lane\u003c/a\u003e"
+            ],
+            "raw_reference" : {
+               "fife_url" : "https://lh5.googleusercontent.com/-nApbTEGIvQs/UtgoGeIXmCI/AAAAAAAAD1E/2uYzxGN_Bo4/s0/Halifax%2BPublic%2BGardens%252C%2BNova%2BScotia"
+            },
+            "width" : 2048
+         },
+         {
+            "height" : 2048,
+            "html_attributions" : [
+               "\u003ca href=\"https://plus.google.com/101638866816479939713\"\u003eAnkara Çiçek Bahçem\u003c/a\u003e"
+            ],
+            "raw_reference" : {
+               "fife_url" : "https://lh6.googleusercontent.com/-5KF6iKMIuEs/UtbZHFi3N8I/AAAAAAAAEHQ/Azs2hLrc_Lk/s0/photo.jpg"
+            },
+            "width" : 1356
+         },
+         {
+            "height" : 612,
+            "html_attributions" : [
+               "\u003ca href=\"https://plus.google.com/111705693787428559746\"\u003eMazen Babgi\u003c/a\u003e"
+            ],
+            "raw_reference" : {
+               "fife_url" : "https://lh5.googleusercontent.com/-xfnl1SXSidY/UZcQDMrxFQI/AAAAAAAAAQM/QbnOPXiJUAU/s0/2013-05-17"
+            },
+            "width" : 612
+         },
+         {
+            "height" : 1070,
+            "html_attributions" : [ "From a Google User" ],
+            "raw_reference" : {
+               "fife_url" : "https://lh3.googleusercontent.com/--ANrmEAWoKg/T4qmOOaAEAI/AAAAAAAAABM/kpgt83jsO8I/s0/HPIM2723.JPG"
+            },
+            "width" : 2042
+         },
+         {
+            "height" : 1368,
+            "html_attributions" : [
+               "\u003ca href=\"https://plus.google.com/102817514741087823939\"\u003ekel ishis\u003c/a\u003e"
+            ],
+            "raw_reference" : {
+               "fife_url" : "https://lh3.googleusercontent.com/-lNQapE3WDoM/T4wvd61jJmI/AAAAAAAADA8/kZshxRw0aQc/s0/100_7137%2B-%2BVersion%2B2.jpg"
+            },
+            "width" : 1824
+         },
+         {
+            "height" : 1357,
+            "html_attributions" : [
+               "\u003ca href=\"https://plus.google.com/106109465788790290017\"\u003eKen Lane\u003c/a\u003e"
+            ],
+            "raw_reference" : {
+               "fife_url" : "https://lh5.googleusercontent.com/-4PT7be554yA/UtgwU9dp3hI/AAAAAAAAD14/3HsCK9PLsg0/s0/Halifax%2BPublic%2BGardens%252C%2BNova%2BScotia"
+            },
+            "width" : 2048
+         }
+      ],
+      "rating" : 4.7,
+      "reference" : "CoQBeAAAAFeIXGc2VzyMptBN2JRtPVuBmjEpF9gnzE1XED0IhteCrtxfVExn38RCTqSv0nvO2FZBYZq-1xrgNrFmeHmwQEJBbgNLnuC7j4JyXkIBcXb7pqJAbf4qEqN68Tkp2odOH31JjU-1ZfATACTOeSgY0NE1K98xo6dD3F7cXNp-T2HiEhB7R7PQS0snQ8llf0dZLNNVGhTGnAQX4dZK8gIs5utyc02iwSotTA",
+      "reviews" : [
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "Pamanja Jones",
+            "author_url" : "https://plus.google.com/105368838965314317243",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "Beautiful in the summer",
+            "time" : 1396366218
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "appeal"
+               },
+               {
+                  "rating" : 3,
+                  "type" : "facilities"
+               },
+               {
+                  "rating" : 3,
+                  "type" : "service"
+               }
+            ],
+            "author_name" : "Sammy Harris",
+            "author_url" : "https://plus.google.com/102690604033489259151",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "Very beautiful inpublic gardens.23C.",
+            "time" : 1378325903
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "appeal"
+               },
+               {
+                  "rating" : 2,
+                  "type" : "facilities"
+               },
+               {
+                  "rating" : 2,
+                  "type" : "service"
+               }
+            ],
+            "author_name" : "JP Bourgeois",
+            "author_url" : "https://plus.google.com/117220115083228535193",
+            "language" : "en",
+            "rating" : 4,
+            "text" : "Very nice garden downtown, very well kept.",
+            "time" : 1372472524
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "Jim Tough",
+            "author_url" : "https://plus.google.com/117772931913152436647",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "So beautiful in the summer",
+            "time" : 1325552286
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "appeal"
+               },
+               {
+                  "rating" : 3,
+                  "type" : "facilities"
+               },
+               {
+                  "rating" : 3,
+                  "type" : "service"
+               }
+            ],
+            "author_name" : "chris evans",
+            "author_url" : "https://plus.google.com/102163690592934566266",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "",
+            "time" : 1376650037
+         }
+      ],
+      "types" : [ "park", "establishment" ],
+      "url" : "https://plus.google.com/106560734126752849767/about?hl=en-US",
+      "user_ratings_total" : 9,
+      "utc_offset" : -180,
+      "vicinity" : "Spring Garden Rd, Halifax",
+      "website" : "http://www.halifax.ca/publicgardens/index.html"
+   },
+   "status" : "OK"
+}
+ )

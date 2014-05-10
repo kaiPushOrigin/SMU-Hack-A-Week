@@ -1,0 +1,85 @@
+_xdc_._ce5lhk && _xdc_._ce5lhk( {
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "5221",
+            "short_name" : "5221",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Spring Garden Rd",
+            "short_name" : "Spring Garden Rd",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Halifax",
+            "short_name" : "Halifax",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "NS",
+            "short_name" : "NS",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Canada",
+            "short_name" : "CA",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "B3J 1Z3",
+            "short_name" : "B3J 1Z3",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003e5221 Spring Garden Rd\u003c/span\u003e, \u003cspan class=\"locality\"\u003eHalifax\u003c/span\u003e, \u003cspan class=\"region\"\u003eNS\u003c/span\u003e \u003cspan class=\"postal-code\"\u003eB3J 1Z3\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eCanada\u003c/span\u003e",
+      "formatted_address" : "5221 Spring Garden Rd, Halifax, NS, Canada",
+      "formatted_phone_number" : "(902) 429-9800",
+      "geometry" : {
+         "location" : {
+            "lat" : 44.644246,
+            "lng" : -63.573162
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/worship_general-71.png",
+      "id" : "265712f5fde9d71dc2dbede2f6288741770626de",
+      "international_phone_number" : "+1 902-429-9800",
+      "name" : "St. Mary's Cathedral Basilica",
+      "photos" : [
+         {
+            "height" : 640,
+            "html_attributions" : [ "From a Google User" ],
+            "raw_reference" : {
+               "fife_url" : "https://lh3.googleusercontent.com/-g3cjXKZmp44/T35Y2p0yUYI/AAAAAAAAAAU/uGE-htsVmEE/s0/St.%2BMary%2527s%2BCathedral%2BBasilica"
+            },
+            "width" : 480
+         }
+      ],
+      "reference" : "CoQBfwAAAOVD0Keiu4ekkhSlI9sBuwkS6tkK2Txf8r34fBLz6XFCWnTRTYBwPvNNz5k6CzAlpBQpsjx7_-Tyau5UqeHj0ANsqBJxOaYseN_JG01AZoaHNpK9nYBy_Z4kvh1snLcn1EyuSGI16Dnu2De67PBiECT1c_slXbxjDYFYKWh0LfLLEhCdBiDw2D_nx_HcR7C0HNCVGhQ0fzF_GK4g6ARdRr3DJI9HEtlDRw",
+      "reviews" : [
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "Ashley Henneberry",
+            "author_url" : "https://plus.google.com/111096422480743579856",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "Very beautiful and peaceful. A must see when visiting the area.",
+            "time" : 1376864628
+         }
+      ],
+      "types" : [ "church", "place_of_worship", "establishment" ],
+      "url" : "https://plus.google.com/113025994696710753932/about?hl=en-US",
+      "user_ratings_total" : 1,
+      "utc_offset" : -180,
+      "vicinity" : "5221 Spring Garden Rd, Halifax",
+      "website" : "http://www.catholichalifax.org/cathedral/"
+   },
+   "status" : "OK"
+}
+ )

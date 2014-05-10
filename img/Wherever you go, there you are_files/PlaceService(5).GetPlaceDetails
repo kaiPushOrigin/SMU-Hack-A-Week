@@ -1,0 +1,137 @@
+_xdc_._7q3svw && _xdc_._7q3svw( {
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "5850-5980",
+            "short_name" : "5850-5980",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "University Ave",
+            "short_name" : "University Ave",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Halifax",
+            "short_name" : "Halifax",
+            "types" : [ "administrative_area_level_3", "political" ]
+         },
+         {
+            "long_name" : "Halifax Regional Municipality",
+            "short_name" : "Halifax Regional Municipality",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "NS",
+            "short_name" : "NS",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Canada",
+            "short_name" : "CA",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "B3K 6R8",
+            "short_name" : "B3K 6R8",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003e5850-5980 University Ave\u003c/span\u003e, \u003cspan class=\"locality\"\u003eHalifax\u003c/span\u003e, \u003cspan class=\"region\"\u003eNS\u003c/span\u003e \u003cspan class=\"postal-code\"\u003eB3K 6R8\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eCanada\u003c/span\u003e",
+      "formatted_address" : "5850-5980 University Ave, Halifax, NS, Canada",
+      "formatted_phone_number" : "(902) 470-8888",
+      "geometry" : {
+         "location" : {
+            "lat" : 44.637383,
+            "lng" : -63.582697
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+      "id" : "4ce206754b7cdfd516fd944cc5e1aa56928c011c",
+      "international_phone_number" : "+1 902-470-8888",
+      "name" : "Iwk Health Centre",
+      "rating" : 4.5,
+      "reference" : "CoQBcwAAAIBKo91b0CyNuricsFzF-Kjs_OndCaN-owqvnDhv39X2pa53fzuaH3UYnqXNK4EWuCo3IMWaaCbU0vgT9s6cuTyM_0RcZueUAYyGyjZ456nVMcc_UZNqSVNkfVF7V14fyYsxainil3PbJnSO3rLf81jlPzdt_6yDt_5G1XKp7sySEhB9GA9kPVmvkOz0ZSb-YrDfGhTxVz5O-1ycc7cG-3C_XMRXPDHlyA",
+      "reviews" : [
+         {
+            "aspects" : [
+               {
+                  "rating" : 0,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "Barbara Lindthaler",
+            "author_url" : "https://plus.google.com/112181969873435047550",
+            "language" : "en",
+            "rating" : 2,
+            "text" : "on march 5th 2014, we welcomed a new granddaughter to our family. Our visit to the IWK centre was an eye opener of lack of cleanliness and care of the facility. We waited in the 5th floor family room while our daughter-in-law got settled in her room. This room was as dirty as anything I have ever seen. The furniture was shiny with layers of past dirt and spills. Around the vending machine was a spill that had remained there for many,many days if not weeks and not mopped up. I could see where the dry mop had been run over the area thus debrie and dust stuck to the spill. The dry mop track could be seen around each piece of furniture and other fixtures in the room. The hallways were equally as dirty, black scuff marks everywhere, dust in the corners and along the walls. I witnessed a man cleaning?? sitting on a motorized floor washing machine pushing a dry mop, thus the dirt in the corners.Is this a culture in this high profile institution? Where is the supervision? The patient room was not cleaned between patients either. The stairwell to the garage was greasy with unclean conditions. To say the least I was appalled and saddened by this experience. Someone should take this seriously and improve these conditions.",
+            "time" : 1396114540
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "Andrew Leonard",
+            "author_url" : "https://plus.google.com/111029018469852334816",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "we just had our first child and the care from every staff member involved from birthing to after care was amazing. Truly made our situation better.",
+            "time" : 1387328293
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "Farhan Khan",
+            "author_url" : "https://plus.google.com/113905301259189770569",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "Nice people, efficient healthcare",
+            "time" : 1384204441
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "Mathieu Jolin",
+            "author_url" : "https://plus.google.com/112698362260791000321",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "I love the IWK!",
+            "time" : 1391286643
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "quality"
+               }
+            ],
+            "author_name" : "Deryl Gallant",
+            "author_url" : "https://plus.google.com/105664729346804117947",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "This place is always amazing....always feel that my wife or kid is very well taken care of. everyone seems to love their job. No complaints",
+            "time" : 1357577143
+         }
+      ],
+      "types" : [ "hospital", "establishment" ],
+      "url" : "https://plus.google.com/102221213608035847744/about?hl=en-US",
+      "user_ratings_total" : 10,
+      "utc_offset" : -180,
+      "vicinity" : "5850-5980 University Ave, Halifax",
+      "website" : "http://www.iwk.nshealth.ca/"
+   },
+   "status" : "OK"
+}
+ )

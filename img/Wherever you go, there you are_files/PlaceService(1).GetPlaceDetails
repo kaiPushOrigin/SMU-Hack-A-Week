@@ -1,0 +1,69 @@
+_xdc_._jzsqbz && _xdc_._jzsqbz( {
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Downtown Halifax",
+            "short_name" : "Downtown Halifax",
+            "types" : [ "neighborhood", "political" ]
+         },
+         {
+            "long_name" : "South End",
+            "short_name" : "South End",
+            "types" : [ "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Halifax",
+            "short_name" : "Halifax",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Halifax",
+            "short_name" : "Halifax",
+            "types" : [ "administrative_area_level_3", "political" ]
+         },
+         {
+            "long_name" : "Halifax Regional Municipality",
+            "short_name" : "Halifax Regional Municipality",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "Nova Scotia",
+            "short_name" : "NS",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Canada",
+            "short_name" : "CA",
+            "types" : [ "country", "political" ]
+         }
+      ],
+      "adr_address" : "Downtown Halifax, \u003cspan class=\"locality\"\u003eHalifax\u003c/span\u003e, \u003cspan class=\"region\"\u003eNS\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eCanada\u003c/span\u003e",
+      "formatted_address" : "Downtown Halifax, Halifax, NS, Canada",
+      "geometry" : {
+         "location" : {
+            "lat" : 44.6457922,
+            "lng" : -63.5778191
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 44.652882,
+               "lng" : -63.5672994
+            },
+            "southwest" : {
+               "lat" : 44.6398499,
+               "lng" : -63.5849611
+            }
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "d098421f7858055db0e57703cb499b925463210e",
+      "name" : "Downtown Halifax",
+      "reference" : "CqQBkgAAAIowHNP9b_kA3QB7_SWBfZ1Y7TladbFcLylvhxcbt71xBMrayPVh8Ws3gZHFDq5GV6bQJSC8K20cMP9jqHR3z5Q4q6otEzcYMHqQ9ZpJBYcbhIIv6pL7Q2RljXddugx9FPUQU53aR5v390dlxp96Jxn_KFUdCl7jsX761Dq4Ad05LKHdeDaGvOqlhdm1STrcitG6RUdNx0qAGaNxt_Bfx7ASED-DBipqDHU1As3S1rLuFaAaFPP1JLKOTUozDFcmeOUNHNKmNgJf",
+      "types" : [ "neighborhood", "political" ],
+      "url" : "https://maps.google.com/maps/place?q=Downtown+Halifax,+Halifax,+NS,+Canada&ftid=0x4b5a2232d2047a23:0xf07ce7a2ef99c31e",
+      "vicinity" : "South End"
+   },
+   "status" : "OK"
+}
+ )

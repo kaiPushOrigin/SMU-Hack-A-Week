@@ -1,0 +1,76 @@
+_xdc_._jccbm9 && _xdc_._jccbm9( {
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Canada",
+            "short_name" : "CA",
+            "types" : [ "country", "political" ]
+         }
+      ],
+      "adr_address" : "5381 Spring Garden Road Halifax, NS B3J 1E9, \u003cspan class=\"country-name\"\u003eCanada\u003c/span\u003e",
+      "formatted_address" : "5381 Spring Garden Road Halifax, NS B3J 1E9, Canada",
+      "formatted_phone_number" : "(902) 490-5700",
+      "geometry" : {
+         "location" : {
+            "lat" : 44.644081,
+            "lng" : -63.574993
+         }
+      },
+      "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/library-71.png",
+      "id" : "97486e7de459cfaa4cafd0bd3c0f9937b178f55b",
+      "international_phone_number" : "+1 902-490-5700",
+      "name" : "Halifax Regional Library",
+      "reference" : "CoQBegAAAJvGUDwXTpat2p3MOz_GVZhWDBv46GrISFpWRx51yHMCVdZj-4gkvga1Ld9qLQRVxY13Alzhm-WY7-9FzX01Rnyp92wOpLNEcDf5Q96Yll37FjgyiZxacqchX1BuVn_KBuywGpLpUuRsXHWqisheQw5hh5OtJtqcOFMg-4YkHjhBEhAOW942UoEIHUKQPSu_EQ84GhQoakwDoDQcRh_j3i2cV3K3MOZH4w",
+      "reviews" : [
+         {
+            "aspects" : [
+               {
+                  "rating" : 2,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "Keriann Dowling",
+            "author_url" : "https://plus.google.com/114945790941538642166",
+            "language" : "en",
+            "rating" : 4,
+            "text" : "",
+            "time" : 1378345270
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 2,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "A Google User",
+            "language" : "en",
+            "rating" : 4,
+            "text" : "",
+            "time" : 1326403283
+         },
+         {
+            "aspects" : [
+               {
+                  "rating" : 3,
+                  "type" : "overall"
+               }
+            ],
+            "author_name" : "A Google User",
+            "language" : "en",
+            "rating" : 5,
+            "text" : "",
+            "time" : 1317242478
+         }
+      ],
+      "types" : [ "library", "establishment" ],
+      "url" : "https://plus.google.com/100967644361994146417/about?hl=en-US",
+      "user_ratings_total" : 3,
+      "utc_offset" : -180,
+      "vicinity" : "5381 Spring Garden Road Halifax, NS B3J 1E9",
+      "website" : "http://www.halifaxpubliclibraries.ca/"
+   },
+   "status" : "OK"
+}
+ )

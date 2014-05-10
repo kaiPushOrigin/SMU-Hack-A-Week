@@ -31,7 +31,8 @@ $interests = $_POST['interests'];
 
     if(strlen($password)<6 || strlen($password)>16)
 {
-    die('{status:0,txt:"Password must be between 6-16 characters"}');
+    echo "<script> alert('Password must be between 6-16 characters')</script>";
+    header ("location: http://localhost:8888/profileinfo.php"); 
 }
 
   if($password != $repassword)
@@ -84,7 +85,6 @@ $interests = $_POST['interests'];
      }
 
 }
-?>
 
 
 ?>

@@ -3,29 +3,40 @@
 session_start();
 
 include "db.php";
-//include "map_process.php";
   
 
 $re = $_SESSION['email'];
 
-$sql = "SELECT distinct interests FROM info WHERE email = '$re';";
+$sql = "SELECT interests FROM info WHERE email = '$re';";
+$second_sql = "SELECT secondInterests FROM info WHERE email = '$re';";
 
 $result = mysql_query($sql)
         or die(mysql_error());
 
-$woo = mysql_fetch_array($result);
+$second_result = mysql_query($second_sql)
+        or die(mysql_error());
 
-echo "<script>alert('$woo')</script>";
 
-if ($result != 0) {
-    $num_results = mysql_num_rows($result);
-    for ($i=1;$i<2;$i++) {
-        $row = mysql_fetch_array($result);
-        $interests = $row['interests'];
+  while($row = mysql_fetch_assoc($result)){
 
-    }
-   $pr = $_GET["interests"]; 
-}
+    $summary[]= $row['interests'];        //for checkboxes
+  }
+
+  $frown = implode(",",$summary);
+
+
+
+
+
+  while($row = mysql_fetch_assoc($second_result)){
+
+    $second_summary= $row['secondInterests'];   //for textbox
+  }
+
+
+
+
+
 ?>
 
 <!doctype HTML>
@@ -44,7 +55,9 @@ if ($result != 0) {
 
 <script>
 var js_var = "<?php echo $interests; ?>";
+var second_js_var = "<?php echo $second_summary; ?>";
 </script>
+
 <script src ="myAppScript.js"></script>
 <link rel="stylesheet" href="myLoc.css">
 <style>
@@ -82,9 +95,8 @@ var js_var = "<?php echo $interests; ?>";
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <button id="sex" class="btn btn-md btn-danger" value="button" onclick="toggle();">Popular Listings</input>
+      <button id="sex" class="btn btn-md btn-danger" value="button" onclick="toggle();">Popular Listings</button>
     </div>
-
 
 
     

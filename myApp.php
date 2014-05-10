@@ -68,10 +68,8 @@ var js_var = "<?php echo $interests; ?>";
       <a class="navmenu-brand" href="#">TUMBLE</a>
       <ul class="nav navmenu-nav">
         <li><a href="discussions.php">Share Your Experience</a></li>
-        <li><a href="../navmenu-reveal/">Edit Your Interests</a></li>
-        <li><a href="../navbar-offcanvas/">Logout</a></li>
-
-
+        <li><a href="interests.php">Edit Your Interests</a></li>
+        <li><a href="index.html">Logout</a></li>
       </ul>
             
       

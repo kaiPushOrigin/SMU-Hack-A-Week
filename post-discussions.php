@@ -11,9 +11,9 @@
         or die ("Error - Could not open database");
 
 
-$sql="INSERT INTO info(name, discussions)
+$sql="INSERT INTO info(name, loc, discussions)
 VALUES
-('$_POST[name]','$_POST[discussions]')";
+('$_POST[name]','$_POST[loc]','$_POST[discussions]')";
 
 
 if (mysql_query($sql,$db_connection)) {
@@ -29,4 +29,5 @@ echo "Something is wrong";
 mysql_close($db_connection)
 
 ?>
+
 

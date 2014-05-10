@@ -16,7 +16,6 @@
 
     <!-- Custom styles for this template -->
     <link href="stylesheets/jumbotron.css" rel="stylesheet">
-                    <link href="stylesheets/background.css" rel="stylesheet">
                     <link href="stylesheets/signin.css" rel="stylesheet">
 
 
@@ -28,6 +27,14 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+<style>
+
+.line {
+  border-color:yellow;
+}
+</style>
+
   </head>
 
   <body>
@@ -36,7 +43,7 @@
       <div class="container">
         <h2>Share Your Experiences and Let People Know!</h2>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        <p><a href = "myApp.php" class="btn btn-primary btn-lg" role="button">Back To Tumble &raquo;</a></p>
       </div>
     </div>
 
@@ -59,8 +66,14 @@ $rsNews = mysql_fetch_assoc($news_query);
 ?>
 
 <?php do {?>
-<p><h2><div class = "pad"> <?php echo $rsNews['name']; ?> <br /></h2> <div class = "jumbotron"><? echo $rsNews['discussions']; ?> 
-  <br /><br /><br />
+<div class="col-lg-4">
+          <img class="img-circle" data-src="img/google.png" src = "img/google.png" alt="Generic placeholder image">
+<p><h2><div class = "pad"> <?php echo $rsNews['name']; ?> <br /></h2> <div id = "line" class = "jumbotron"><? echo $rsNews['discussions']; ?> 
+  
+
+
+
+
 
 </div>
 </div>
@@ -68,6 +81,9 @@ $rsNews = mysql_fetch_assoc($news_query);
 
 
 <br /><br /><br /><br /><br /><br /><br />
+
+</div>
+
 
 <form class="form-signin" role="form" action="post-discussions.php" method="post">
 

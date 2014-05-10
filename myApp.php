@@ -36,6 +36,8 @@ if ($result != 0) {
 <meta charset="utf-8">
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places"></script>
       <link href="stylesheets/two.css" rel="stylesheet"><link href="stylesheets/one.css" rel="stylesheet">
+        <link href="bower_components/bootstrap-jasny/dist/css/bootstrap.css" rel="stylesheet">
+
 
 
     <link href="stylesheets/navmenu-push.css" rel="stylesheet">
@@ -65,7 +67,7 @@ var js_var = "<?php echo $interests; ?>";
 <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
       <a class="navmenu-brand" href="#">TUMBLE</a>
       <ul class="nav navmenu-nav">
-        <li><a href="./">Share Your Experience</a></li>
+        <li><a href="discussions.php">Share Your Experience</a></li>
         <li><a href="../navmenu-reveal/">Edit Your Interests</a></li>
         <li><a href="../navbar-offcanvas/">Logout</a></li>
 

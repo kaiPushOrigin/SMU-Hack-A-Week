@@ -70,10 +70,11 @@ $interests = $_POST['interests'];
 
 
     $_SESSION['email'] = $email;
+    $_SESSION['user1'] = $name;
  
     if ($link) {
 
-      header ("location: http://localhost:8888/sandwich.html"); 
+      header ("location: http://localhost:8888/interests.php"); 
         }
         else {
         echo "Something is wrong";
